@@ -50,8 +50,18 @@ address a{
   opacity: 60%;
 }
 
+.portfolio-main h2{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.portfolio-main p{
+  font-weight: 400;
+  font-size: 16px;
+}
+
 h2{
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
 }
 
