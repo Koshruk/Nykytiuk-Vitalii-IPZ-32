@@ -7,25 +7,12 @@
 body{
   max-width: 1600px;
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
 header a{
   font-weight: 500;
   font-size: 14px;
-  color: black;
-}
-
-footer a{
-  color: black;
-}
-
-address{
-  font-weight: 400;
-  font-size: 14px;
-}
-
-address a{
-  opacity: 60%;
 }
 
 .logo-link{
@@ -54,15 +41,29 @@ address a{
   font-size: 16px;
 }
 
+address{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+address a{
+  opacity: 60%;
+}
 
 h2{
   font-weight: 700px;
   font-size: 36px;
 }
 
-ul{
-  list-style: none;
+a{
+  color: inherit;
 }
+
+a:hover{
+  color: rgb(33, 148, 243);
+}
+
+
 
 /*
 .header-block{
