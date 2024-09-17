@@ -13,56 +13,86 @@ body{
 header a{
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.main-page h1{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-page h2{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .logo-link{
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .info-section h3{
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .info-section p{
   font-weight: 400;
   font-size: 14px;
-}
-
-.employees-section p{
-  font-weight: 400;
-  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(117,117,117);
 }
 
 .employees-section h3{
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.employees-section p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 address{
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.033em;
 }
 
 address a{
   opacity: 60%;
 }
 
-.portfolio-main h2{
+.portfolio h2{
   font-weight: 700;
   font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.portfolio-main p{
+.portfolio p{
   font-weight: 400;
   font-size: 16px;
-}
-
-h2{
-  font-weight: 700;
-  font-size: 36px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 a{
