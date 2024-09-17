@@ -1,7 +1,97 @@
-div.header-block{
+.header-block{
   border: 1px;
+  width: 1600px;
   border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
+
+.logo-link{
+  border: 1px;
+  border-style:dotted;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.header-block a{
+  color: black;
+}
+
+.nav-list{
+  border: 1px;
+  border-style:dotted;
+}
+
+.nav-list li{
+  border: 3px;
+  border-style: groove;
+}
+
+.nav-list a{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;  
+}
+
+.header-contacts{
+  border: 1px;
+  border-style:dotted;
+}
+
+.header-contacts a{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+.header-block ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+h1{
+  width: 800px;
+  text-align: center;
+}
+
+
+
+.button-section{
+  width: 1600px;
+  height: 600px;
+  background-color: rgb(47, 48, 58);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900px;
+  font-size: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-section button{
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700px;
+  font-size: 16px;
+  background-color: rgb(33, 148, 243);
+  border-color: rgb(33, 148, 243);
+  appearance: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
 
 
 
