@@ -60,6 +60,10 @@ h2{
   font-size: 36px;
 }
 
+ul{
+  list-style: none;
+}
+
 /*
 .header-block{
   border: 1px;
