@@ -8,6 +8,7 @@
   --active-color: rgb(33, 148, 243);
   --main-text-color: rgb(33, 33, 33);
   --pale-text-color: rgb(117, 117, 117);
+  --address-link-color: rgba(33, 33, 33, 0.6);
 }
 
 body{
@@ -113,7 +114,7 @@ address{
 }
 
 address a{
-  opacity: 60%;
+  color: var(--address-link-color);
 }
 
 .portfolio h2{
