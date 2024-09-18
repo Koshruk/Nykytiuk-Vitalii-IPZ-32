@@ -8,9 +8,10 @@
   --active-color: rgb(33, 148, 243);
   --main-text-color: rgb(33, 33, 33);
   --pale-text-color: rgb(117, 117, 117);
+  --white-text: rgb(255, 255, 255);
   --address-link-color: rgba(255, 255, 255, 0.6);
   --background-color: rgb(47, 48, 58);
-  --white-text: rgb(255, 255, 255);
+  --light-background-color: rgb(245, 244, 250);
 }
 
 body{
@@ -81,6 +82,10 @@ header a{
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pale-text-color);
+}
+
+.employees-section{
+  background-color: var(--light-background-color);
 }
 
 .employees-section h3{
