@@ -12,9 +12,11 @@
   --address-link-color: rgba(255, 255, 255, 0.6);
   --background-color: rgb(47, 48, 58);
   --light-background-color: rgb(245, 244, 250);
+  --border-color-header: rgb(236, 236, 236);
+  --border-color-portfolio: rgb(238, 238, 238);
 }
 
-p, h1, h2, h3, a, ul, li, figure{
+p, h1, h2, h3, a, ul, li, figure, body{
   margin: 0;
   padding: 0;
 }
@@ -53,6 +55,10 @@ a {
 
 a:hover {
   color: var(--active-color);
+}
+
+header{
+  border-bottom: 1px solid var(--border-color-header);
 }
 
 header .container{
@@ -95,8 +101,6 @@ header ul{
   margin-left: auto;
 }
 
-
-
 .main-page h1 {
   font-weight: 700;
   font-size: 44px;
@@ -116,7 +120,7 @@ header ul{
 }
 
 .main-page button {
-  padding: 10px 20px;
+  padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -227,7 +231,7 @@ footer {
   color: var(--white-text);
 }
 
-footer .container{
+footer{
   padding: 60px 0px 60px;
 }
 
@@ -245,14 +249,44 @@ address a {
   margin-top: 12px;
 }
 
+.portfolio section{
+  margin: 94px 0px 94px;
+}
+
 .portfolio button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  background-color: var(--active-color);
+  color: inherit;
+  background-color: var(--light-background-color);
   border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+
+.buttons_portfolio{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.buttons_portfolio button:hover{
+  color: var(--white-text);
+  background-color: var(--active-color);
+}
+
+.figures-portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.figures-portfolio figcaption{
+  padding: 20px 24px 20px;
 }
 
 .portfolio h2 {
@@ -267,6 +301,12 @@ address a {
   line-height: 1.88;
   color: var(--pale-text-color);
 }
+
+.portfolio figure{
+  box-shadow: 0px 0px 1px var(--border-color-portfolio) inset;
+}
+
+/*
 
 /*
 .header-block{
