@@ -22,7 +22,9 @@ body {
 
 ul {
   list-style-type: none;
+  list-style-position: inside;
 }
+
 header{
   display: flex;
   align-items: baseline;
@@ -42,6 +44,7 @@ header ul{
 }
 
 
+
 .main-page h1 {
   font-weight: 700;
   font-size: 44px;
@@ -49,6 +52,8 @@ header ul{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text);
+  width: 50%;
+  text-align: center;
 }
 
 .main-page h2 {
@@ -67,8 +72,15 @@ header ul{
   margin-left: 13%;
 }
 
+.logo-link span {
+  color: var(--active-color);
+}
+
 .nav-list{
   margin-left: 6%;
+}
+
+.nav-list ul{
   gap: 18%;
 }
 
@@ -77,16 +89,30 @@ header ul{
   width: 30%;
   margin-left: 23%;
   gap: 13%;
-  border: 1px;
-  border-style: dashed;
 }
 
 .title-section {
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
 }
 
-.logo-link span {
-  color: var(--active-color);
+.info-section{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.info-section ul{
+  display: flex;
+  gap: 2.6%;
+}
+
+.info-section h2{
+  display: none;
 }
 
 .info-section h3 {
@@ -103,6 +129,20 @@ header ul{
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pale-text-color);
+}
+
+.pictures_section{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.pictures_section h2{
+  text-align: center;
+}
+
+.pictures_section ul{
+  display: flex;
+  gap: 2.6%;
 }
 
 .employees-section {
@@ -227,10 +267,7 @@ a:hover {
 
 
 
-h1{
-  width: 800px;
-  text-align: center;
-}
+
 
 
 
@@ -266,9 +303,7 @@ h1{
 
 }
 
-.info-section h2{
-  display: none;
-}
+
 
 ul{
   list-style: none;
