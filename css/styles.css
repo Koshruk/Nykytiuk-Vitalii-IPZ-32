@@ -34,8 +34,7 @@ body {
 
 .container{
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px 0px 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -255,6 +254,10 @@ address a {
   margin: 94px 0px 94px;
 }
 
+.portfolio .container{
+  padding: 11px 0px 11px;
+}
+
 .portfolio button {
   font-family: inherit;
   font-weight: 500;
@@ -285,7 +288,7 @@ address a {
 .figures-portfolio{
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 30px;
   justify-content: center;
 }
 
