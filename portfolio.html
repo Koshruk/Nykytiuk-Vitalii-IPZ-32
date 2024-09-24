@@ -8,39 +8,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body class = "portfolio">
     <header>
-        <a class = "logo-link" href="index.html"
-          ><span>Web</span>Studio</a
-        >
-        <nav class = "nav-list">
-          <ul>
-            <li>
-              <a href="">Студія</a>
-            </li>
-            <li>
-              <a href="">Портфоліо</a>
-            </li>
-            <li>
-              <a href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class = "header-contacts">
-          <li>
-            <a href="info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380951111111">+38 096 111 11 11</a>
-          </li>
+      <div class = "container">
+      <a class = "logo-link" href="index.html"
+        ><span>Web</span>Studio</a
+      >
+      <nav class = "nav-list">
         <ul>
-    </header>
+          <li>
+            <a href="index.html">Студія</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Портфоліо</a>
+          </li>
+          <li>
+            <a href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class = "header-contacts">
+        <li>
+          <a href="info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380951111111">+38 096 111 11 11</a>
+        </li>
+      <ul>
+      </div>
+  </header>
 
     <main>
       <section>
-        <ul>
+      <div class = "container">
+        <ul class = "buttons_portfolio">
             <li>
                 <button type="button">Усі</button>
             </li>
@@ -57,7 +61,7 @@
                 <button type="button">Маркетинг</button>
             </li>
         </ul>
-        <ul>
+        <ul class = "figures-portfolio">
             <li>
                 <figure>
                   <img src="./images/techno.jpg" alt="Ноутбук з відкритим вебсайтом де відерита сторінка з працівниками компанії" width="370" height="294">
@@ -140,17 +144,20 @@
               </figure>
             </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer>
-      <a class = "logo-link" href="https://koshruk.github.io/Koshruk-Nykytiuk-Vitalii-IPZ-32/"
+      <div class="container">
+      <a class = "logo-link" href="index.html"
         ><span>Web</span>Studio</a
       >
       <address>
-        м. Київ, пр-т Лесі Українки, 26
+        <p>м. Київ, пр-т Лесі Українки, 26</p>
         <a href="info@devstudio.com">info@devstudio.com</a>
         <a href="tel:+380951111111">0951111111</a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
