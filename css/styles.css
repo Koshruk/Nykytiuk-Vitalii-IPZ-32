@@ -27,6 +27,7 @@ body {
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 14;
+  font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
@@ -284,7 +285,8 @@ address a {
 .figures-portfolio{
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 26px;
+  justify-content: center;
 }
 
 .figures-portfolio figcaption{
@@ -305,8 +307,8 @@ address a {
 }
 
 .portfolio figure{
-  box-shadow: 0px 0px 1px var(--border-color-portfolio) inset;
-  /*border: 1px solid var(--border-color-portfolio);*/
+  /*box-shadow: 0px 0px 1px var(--border-color-portfolio) inset;*/
+  border: 1px solid var(--border-color-portfolio);
 }
 
 /*
