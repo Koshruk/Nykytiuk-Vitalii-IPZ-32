@@ -64,13 +64,16 @@ header{
 header .container{
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+}
+
+header .logo-link{
+  padding: 24px 0px;
 }
 
 .logo-link span {
@@ -85,7 +88,6 @@ header a {
 
 header ul{
   display: flex;
-  justify-content: space-evenly;
 }
 
 .nav-list{
