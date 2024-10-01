@@ -104,6 +104,9 @@ header ul{
   margin-left: auto;
 }
 
+.header-contacts svg{
+  margin-right: 10px;
+}
 
 .header-link svg{
   width: 16px;
