@@ -10,11 +10,13 @@
   --pale-text-color: rgb(117, 117, 117);
   --white-text: rgb(255, 255, 255);
   --address-link-color: rgba(255, 255, 255, 0.6);
+  --address-button-color: rgba(255, 255, 255 , 0.1);
   --background-color: rgb(47, 48, 58);
   --background-filter: rgba(47, 48, 58, 0.4);
   --light-background-color: rgb(245, 244, 250);
   --border-color-header: rgb(236, 236, 236);
   --border-color-portfolio: rgb(238, 238, 238);
+  --pale-icon-color: rgb(175, 177, 184);
 }
 
 p, h1, h2, h3, a, ul, li, figure, body, img{
@@ -46,6 +48,7 @@ ul {
 
 button {
   color: var(--white-text);
+  appearance: none;
 }
 
 a {
@@ -114,7 +117,6 @@ header ul{
 
 .header-contacts li:hover{
   color: var(--active-color);
-  filter:brightness(0) saturate(100%) invert(50%) sepia(49%) saturate(2261%) hue-rotate(183deg) brightness(94%) contrast(102%)
 }
 
 .main-page h1 {
@@ -135,7 +137,7 @@ header ul{
   margin-bottom: 50px;
 }
 
-.main-page button {
+.title-section button {
   padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
@@ -261,29 +263,68 @@ header ul{
   font-size: 16px;
   color: var(--pale-text-color);
 }
-
-.employees-icons-list{
+  
+.employees-buttons-list{
   margin-top: 16px;
   display: flex;
   gap: 10px;
 }
 
-.employees-icons-list li{
+.employees-buttons-list button{
+  max-height: 44px;
   padding: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--white-text);
+  color: var(--pale-icon-color);
 }
 
-.employees-icons-list svg{
+.employees-buttons-list button:hover{
+  background-color: var(--active-color);
+  color: var(--white-text);
+}
+
+.employees-buttons-list svg{
   width: 20px;
   height: 20px;
 }
 
-footer {
-  background-color: var(--background-color);
-  color: var(--white-text);
+.clients-section .container{
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-footer{
+.clients-section ul{
+  display: flex;
+  gap: 30px;
+}
+
+.clients-section button{
+  max-width: 170px;
+  padding: 16px 32px;
+  border-color: var(--pale-icon-color);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  color: var(--pale-icon-color);
+  background-color: var(--white-text);
+}
+
+.clients-section button:hover{
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.clients-section svg{
+  width: 106px;
+  height: 60px;
+}
+
+footer {
   padding: 60px 0px 60px;
+  background-color: var(--background-color);
+  color: var(--white-text);
 }
 
 address {
@@ -298,6 +339,43 @@ address {
 address a {
   color: var(--address-link-color);
   margin-top: 12px;
+}
+
+footer .container{
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-buttons ul{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+footer .footer-buttons{
+  margin-left: 70px;
+}
+
+footer .footer-buttons button{
+  max-height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--address-button-color);
+  color: var(--white-text);
+}
+
+footer h3{
+  text-transform: uppercase;
+} 
+
+footer .footer-buttons button:hover{
+  background-color: var(--active-color);
+}
+
+.footer-buttons svg{
+  width: 20px;
+  height: 20px;
 }
 
 .portfolio main .container{
@@ -325,13 +403,13 @@ address a {
   gap: 8px;
   margin-bottom: 50px;
 }
-
+/*
 .buttons_portfolio button:hover{
   color: var(--white-text);
   background-color: var(--active-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+*/
 .figures-portfolio{
   display: flex;
   flex-wrap: wrap;
