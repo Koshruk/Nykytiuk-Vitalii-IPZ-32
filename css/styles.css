@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   font-weight: 400;
-  font-size: 14;
+  font-size: 14px;
   font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -106,6 +106,16 @@ header ul{
 
 .header-contacts svg{
   margin-right: 10px;
+}
+
+.header-link{
+  display: flex;
+  align-items: center;
+}
+
+.header-number{
+  display: flex;
+  align-items: center;
 }
 
 .header-link svg{
@@ -195,13 +205,13 @@ header ul{
   margin-bottom: 30px;
   padding: 25px 0;
   background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
 }
 
 .colored-container svg{
   width: 70px;
   height: 70px;
-  display: block;
-  margin: auto;
 }
 
 .info-section h2{
@@ -267,27 +277,32 @@ header ul{
   color: var(--pale-text-color);
 }
   
-.employees-buttons-list{
+.employees-links-list{
+  max-height: 44px;
   margin-top: 16px;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
-.employees-buttons-list button{
-  max-height: 44px;
+.employees-links-list li{
+  display: flex;
+  max-width: 44px;
+}
+
+.employees-links-list a{
   padding: 12px;
   border-radius: 50%;
-  border: none;
   background-color: var(--white-text);
   color: var(--pale-icon-color);
 }
 
-.employees-buttons-list button:hover{
+.employees-links-list a:hover{
   background-color: var(--active-color);
   color: var(--white-text);
 }
 
-.employees-buttons-list svg{
+.employees-links-list svg{
   width: 20px;
   height: 20px;
 }
@@ -303,7 +318,7 @@ header ul{
   gap: 30px;
 }
 
-.clients-section button{
+.clients-section a{
   max-width: 170px;
   padding: 16px 32px;
   border-color: var(--pale-icon-color);
@@ -312,9 +327,10 @@ header ul{
   border-radius: 5px;
   color: var(--pale-icon-color);
   background-color: var(--white-text);
+  display: flex;
 }
 
-.clients-section button:hover{
+.clients-section a:hover{
   border-color: var(--active-color);
   color: var(--active-color);
 }
@@ -425,21 +441,25 @@ footer .container{
   align-items: center;
 }
 
-footer .footer-buttons ul{
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-footer .footer-buttons{
+footer .footer-button-links{
   margin-left: 70px;
 }
 
-footer .footer-buttons button{
+footer .footer-button-links ul{
+  margin-top: 20px;
   max-height: 44px;
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-button-links li{
+  display: flex;
+  max-width: 44px;
+}
+
+footer .footer-button-links a{
   padding: 12px;
   border-radius: 50%;
-  border: none;
   background-color: var(--address-button-color);
   color: var(--white-text);
 }
@@ -448,11 +468,11 @@ footer h3{
   text-transform: uppercase;
 } 
 
-footer .footer-buttons button:hover{
+footer .footer-button-links a:hover{
   background-color: var(--active-color);
 }
 
-.footer-buttons svg{
+.footer-button-links svg{
   width: 20px;
   height: 20px;
 }
