@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
@@ -31,13 +31,23 @@
           </ul>
         </nav>
         <ul class = "header-contacts">
-          <li>
-            <a href="info@devstudio.com">info@devstudio.com</a>
+          <li class = "header-link">
+            <svg>
+              <use href = "./images/icons.svg#icon-envelope">
+            </svg>
+            <a href="info@devstudio.com">
+              info@devstudio.com
+            </a>
           </li>
-          <li>
-            <a href="tel:+380951111111">+38 096 111 11 11</a>
+          <li class = "header-number">
+            <svg>
+              <use href = "./images/icons.svg#icon-smartphone">
+            </svg>
+            <a href="tel:+380951111111">
+              +38 096 111 11 11
+            </a>
           </li>
-        <ul>
+        </ul>
         </div>
     </header>
 
@@ -53,6 +63,11 @@
         <!--Прихований заголовок-->
         <ul>
           <li>
+            <div class = "colored-container">
+              <svg>
+                <use href = "./images/icons.svg#icon-antenna-1">
+              </svg>
+            </div>
             <h3>Увага до деталей</h3>
             <p>
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -61,6 +76,11 @@
           </li>
 
           <li>
+            <div class = "colored-container">
+              <svg>
+                <use href = "./images/icons.svg#icon-clock-1">
+              </svg>
+            </div>
             <h3>Пунктуальність</h3>
             <p>
               Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -69,6 +89,11 @@
           </li>
 
           <li>
+            <div class = "colored-container">
+              <svg>
+                <use href = "./images/icons.svg#icon-diagram-1">
+              </svg>
+            </div>
             <h3>Планування</h3>
             <p>
               Так само консультація з широким активом значною мірою зумовлює.
@@ -76,6 +101,11 @@
           </li>
 
           <li>
+            <div class = "colored-container">
+              <svg>
+                <use href = "./images/icons.svg#icon-astronaut-1">
+              </svg>
+            </div>
             <h3>Сучасні технології</h3>
             <p>
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -122,7 +152,7 @@
       <section class ="employees-section">
         <div class="container">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class = "employees-figures-list">
           <li>
             <figure>
               <img
@@ -134,6 +164,36 @@
               <figcaption>
                 <h3>Ігор Дем'яненко</h3>
                 <p>Product Designer</p>
+                <ul class = "employees-links-list">
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-instagram-2">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-twitter-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-facebook-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-linkedin-1">
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </figcaption>
             </figure>
           </li>
@@ -148,6 +208,36 @@
               <figcaption>
                 <h3>Ольга Рєпіна</h3>
                 <p>Frontend Developer</p>
+                <ul class = "employees-links-list">
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-instagram-2">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-twitter-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-facebook-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-linkedin-1">
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </figcaption>
             </figure>
           </li>
@@ -162,6 +252,36 @@
               <figcaption>
                 <h3>Микола Тарасов</h3>
                 <p>Marketing</p>
+                <ul class = "employees-links-list">
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-instagram-2">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-twitter-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-facebook-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-linkedin-1">
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </figcaption>
             </figure>
           </li>
@@ -176,23 +296,138 @@
               <figcaption>
                 <h3>Михайло Єрмаков</h3>
                 <p>UI Designer</p>
+                <ul class = "employees-links-list">
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-instagram-2">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-twitter-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-facebook-1">
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <svg>
+                        <use href = "./images/icons.svg#icon-linkedin-1">
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </figcaption>
             </figure>
           </li>
         </ul>
         </div>
       </section>
+
+      <section class = "clients-section">
+        <div class = "container">
+          <h2>Постійні клієнти</h2>
+          <ul>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo1">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo2">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo3">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo4">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-Logo5">
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
-      <a class = "logo-link" href="index.html"
-        ><span>Web</span>Studio</a
-      >
-      <address>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
-        <a href="info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380951111111">0951111111</a>
-      </address>
+        <div>
+        <a class = "logo-link" href="index.html"
+          ><span>Web</span>Studio</a
+        >
+        <address>
+          <p>м. Київ, пр-т Лесі Українки, 26</p>
+          <a href="info@devstudio.com">info@devstudio.com</a>
+          <a href="tel:+380951111111">0951111111</a>
+        </address>
+        </div>
+        <div class = "footer-button-links">
+          <h3>Приєднуйтесь</h3>
+          <ul>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-instagram-2">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-twitter-1">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-facebook-1">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg>
+                  <use href = "./images/icons.svg#icon-linkedin-1">
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

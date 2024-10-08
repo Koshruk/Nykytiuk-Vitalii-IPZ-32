@@ -10,10 +10,13 @@
   --pale-text-color: rgb(117, 117, 117);
   --white-text: rgb(255, 255, 255);
   --address-link-color: rgba(255, 255, 255, 0.6);
+  --address-button-color: rgba(255, 255, 255 , 0.1);
   --background-color: rgb(47, 48, 58);
+  --background-filter: rgba(47, 48, 58, 0.4);
   --light-background-color: rgb(245, 244, 250);
   --border-color-header: rgb(236, 236, 236);
   --border-color-portfolio: rgb(238, 238, 238);
+  --pale-icon-color: rgb(175, 177, 184);
 }
 
 p, h1, h2, h3, a, ul, li, figure, body, img{
@@ -25,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   font-weight: 400;
-  font-size: 14;
+  font-size: 14px;
   font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -45,6 +48,7 @@ ul {
 
 button {
   color: var(--white-text);
+  appearance: none;
 }
 
 a {
@@ -100,6 +104,34 @@ header ul{
   margin-left: auto;
 }
 
+.header-contacts svg{
+  margin-right: 10px;
+}
+
+.header-link{
+  display: flex;
+  align-items: center;
+}
+
+.header-number{
+  display: flex;
+  align-items: center;
+}
+
+.header-link svg{
+  width: 16px;
+  height: 12px;
+}
+
+.header-number svg{
+  width: 10px;
+  height: 16px;
+}
+
+.header-contacts li:hover{
+  color: var(--active-color);
+}
+
 .main-page h1 {
   font-weight: 700;
   font-size: 44px;
@@ -118,7 +150,7 @@ header ul{
   margin-bottom: 50px;
 }
 
-.main-page button {
+.title-section button {
   padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
@@ -136,9 +168,14 @@ header ul{
   color: var(--pale-text-color);
 }
 
+
 .title-section {
-  background-color: var(--background-color);
+  background-image: linear-gradient(0deg, var(--background-filter), var(--background-filter)), url('../images/title_section_photo.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1600px;
 }
+
 
 .title-section .container{
   display: flex;
@@ -164,6 +201,18 @@ header ul{
   flex: 1;
 }
 
+.colored-container{
+  margin-bottom: 30px;
+  padding: 25px 0;
+  background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.colored-container svg{
+  width: 70px;
+  height: 70px;
+}
 
 .info-section h2{
   display: none;
@@ -201,7 +250,7 @@ header ul{
   padding-bottom: 94px;
 }
 
-.employees-section ul{
+.employees-figures-list{
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -210,7 +259,7 @@ header ul{
 .employees-section figure{
   background-color: var(--white-text);
   border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .employees-section figcaption{
@@ -227,34 +276,75 @@ header ul{
   font-size: 16px;
   color: var(--pale-text-color);
 }
+  
+.employees-links-list{
+  max-height: 44px;
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 
-footer {
-  background-color: var(--background-color);
+.employees-links-list li{
+  display: flex;
+  max-width: 44px;
+}
+
+.employees-links-list a{
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--white-text);
+  color: var(--pale-icon-color);
+}
+
+.employees-links-list a:hover{
+  background-color: var(--active-color);
   color: var(--white-text);
 }
 
-footer{
-  padding: 60px 0px 60px;
+.employees-links-list svg{
+  width: 20px;
+  height: 20px;
 }
 
-address {
-  line-height: 1.14;
-  letter-spacing: 0.033em;
-  font-style: normal;
+.clients-section .container{
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-section ul{
   display: flex;
-  flex-direction: column;
-  margin-top: 28px;
+  gap: 30px;
 }
 
-address a {
-  color: var(--address-link-color);
-  margin-top: 12px;
+.clients-section a{
+  max-width: 170px;
+  padding: 16px 32px;
+  border-color: var(--pale-icon-color);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  color: var(--pale-icon-color);
+  background-color: var(--white-text);
+  display: flex;
+}
+
+.clients-section a:hover{
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.clients-section svg{
+  width: 106px;
+  height: 60px;
 }
 
 .portfolio main .container{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 
 .portfolio button {
   font-family: inherit;
@@ -280,7 +370,13 @@ address a {
 .buttons_portfolio button:hover{
   color: var(--white-text);
   background-color: var(--active-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.buttons_portfolio button:focus{
+  color: var(--white-text);
+  background-color: var(--active-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .figures-portfolio{
@@ -308,12 +404,77 @@ address a {
 }
 
 .portfolio figure{
-  /*box-shadow: 0px 0px 1px var(--border-color-portfolio) inset;*/
   border: 1px solid var(--border-color-portfolio);
+}
+
+.portfolio figure:hover{
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .figures-portfolio li{
   max-width: 370px;
+}
+
+
+footer {
+  padding: 60px 0px 60px;
+  background-color: var(--background-color);
+  color: var(--white-text);
+}
+
+address {
+  line-height: 1.14;
+  letter-spacing: 0.033em;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+}
+
+address a {
+  color: var(--address-link-color);
+  margin-top: 12px;
+}
+
+footer .container{
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-button-links{
+  margin-left: 70px;
+}
+
+footer .footer-button-links ul{
+  margin-top: 20px;
+  max-height: 44px;
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-button-links li{
+  display: flex;
+  max-width: 44px;
+}
+
+footer .footer-button-links a{
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--address-button-color);
+  color: var(--white-text);
+}
+
+footer h3{
+  text-transform: uppercase;
+} 
+
+footer .footer-button-links a:hover{
+  background-color: var(--active-color);
+}
+
+.footer-button-links svg{
+  width: 20px;
+  height: 20px;
 }
 
 /*
