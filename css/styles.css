@@ -6,6 +6,7 @@
 
 :root {
   --active-color: rgb(33, 148, 243);
+  --active-color-overlay: rgba(33, 148, 243, 0.9);
   --main-text-color: rgb(33, 33, 33);
   --pale-text-color: rgb(117, 117, 117);
   --white-text: rgb(255, 255, 255);
@@ -277,9 +278,6 @@ header li{
   position: relative;
 }
 
-.pictures-list img{
-}
-
 .pictures_section .text-overlay{
   background-image: linear-gradient(0deg, var(--background-filter-2), var(--background-filter-2));
   color: var(--white-text);
@@ -452,7 +450,7 @@ header li{
   letter-spacing: 0.06em;
 }
 
-.figures-portfolio p {
+.figures-portfolio figcaption p {
   font-size: 16px;
   line-height: 1.88;
   color: var(--pale-text-color);
@@ -464,8 +462,40 @@ header li{
   transition-duration: 250ms;
 }
 
+.image-wrapper{
+  position: relative;
+  width:max-content;
+  overflow: hidden;
+} 
+
+.figures-portfolio .figure-overlay{
+  background-image: linear-gradient(0deg, var(--active-color-overlay), var(--active-color-overlay));
+  color: var(--white-text);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0px;
+  left: 0px;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: ease 500ms;
+  opacity: 1;
+}
+
+.figures-portfolio .figure-overlay p{
+  font-size: 18px;
+  line-height: 1.56;
+}
+
 .portfolio figure:hover{
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.portfolio figure:hover .figure-overlay{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .figures-portfolio li{
