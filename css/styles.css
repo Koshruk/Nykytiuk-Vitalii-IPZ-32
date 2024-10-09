@@ -49,26 +49,30 @@ ul {
 button {
   color: var(--white-text);
   appearance: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 a:hover {
   color: var(--active-color);
 }
 
+
 header{
   border-bottom: 1px solid var(--border-color-header);
+  max-height: 80px;
 }
 
 header .container{
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .logo-link {
@@ -85,9 +89,14 @@ header a {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding: 25px 0;
 }
 
 header ul{
+  display: flex;
+}
+
+header li{
   display: flex;
 }
 
@@ -97,6 +106,29 @@ header ul{
 
 .nav-list ul{
   gap: 50px;
+}
+
+.main-page .main-page-navigation a::after{
+  height: 4px;
+  width: 100%;
+  background-color: var(--active-color);
+  border-radius: 2px;
+  content: '';
+  display: flex;
+  position: relative;
+}
+
+.portfolio .portfolio-page-navigation a::after{
+  height: 4px;
+  width: 100%;
+  background-color: var(--active-color);
+  border-radius: 5px;
+  content: '';
+  display: flex;
+}
+
+.nav-list a{
+  padding: 32px 0;
 }
 
 .header-contacts{
@@ -405,6 +437,8 @@ header ul{
 
 .portfolio figure{
   border: 1px solid var(--border-color-portfolio);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .portfolio figure:hover{
