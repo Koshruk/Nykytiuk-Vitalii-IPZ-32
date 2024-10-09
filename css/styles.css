@@ -13,6 +13,7 @@
   --address-button-color: rgba(255, 255, 255 , 0.1);
   --background-color: rgb(47, 48, 58);
   --background-filter: rgba(47, 48, 58, 0.4);
+  --background-filter-2: rgba(47, 48, 58, 0.8);
   --light-background-color: rgb(245, 244, 250);
   --border-color-header: rgb(236, 236, 236);
   --border-color-portfolio: rgb(238, 238, 238);
@@ -266,10 +267,32 @@ header li{
   padding-bottom: 94px;
 }
 
-.pictures_section ul{
+.pictures_section .pictures-list{
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+
+.pictures_section .pictures-list li{
+  position: relative;
+}
+
+.pictures-list img{
+}
+
+.pictures_section .text-overlay{
+  background-image: linear-gradient(0deg, var(--background-filter-2), var(--background-filter-2));
+  color: var(--white-text);
+  position: absolute;
+  bottom: 1%;
+  right: 0px;
+  left: 0px;
+  padding: 27px;
+}
+
+.pictures_section .text-overlay p{
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .employees-section {
