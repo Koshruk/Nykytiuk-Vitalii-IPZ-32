@@ -26,6 +26,10 @@ p, h1, h2, h3, a, ul, li, figure, body, img{
   padding: 0;
 }
 
+img{
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -69,7 +73,6 @@ a:hover {
 
 header{
   border-bottom: 1px solid var(--border-color-header);
-  max-height: 80px;
 }
 
 header .container{
@@ -480,8 +483,7 @@ header li{
   padding: 63px 24px;
 
   transform: translateY(100%);
-  transition: ease 500ms;
-  opacity: 1;
+  transition: transform 500ms;
 }
 
 .figures-portfolio .figure-overlay p{
@@ -495,7 +497,6 @@ header li{
 
 .portfolio figure:hover .figure-overlay{
   transform: translateY(0);
-  opacity: 1;
 }
 
 .figures-portfolio li{
