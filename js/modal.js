@@ -17,6 +17,6 @@
 
     function closeModal(){
       refs.modal.classList.add("is-hidden");
-      refs.modal.classList.remove("is-visible");
+      efs.modal.classList.remove("is-visible");
     }
   })();
