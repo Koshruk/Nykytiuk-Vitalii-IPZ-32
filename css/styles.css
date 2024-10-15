@@ -77,6 +77,7 @@
   animation: hide 200ms;
 }
 
+
 @keyframes show{
   from{
     opacity: 0;

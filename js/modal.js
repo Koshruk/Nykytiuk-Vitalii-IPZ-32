@@ -19,8 +19,8 @@
       refs.modal.classList.remove("is-visible");
       refs.modal.classList.add("close");
       setTimeout(() => {
-      refs.modal.classList.add("is-hidden");
-      refs.modal.classList.remove("close");
-      }, 200);
+        refs.modal.classList.remove("close");
+        refs.modal.classList.add("is-hidden");
+      }, 190);
     }
   })();
