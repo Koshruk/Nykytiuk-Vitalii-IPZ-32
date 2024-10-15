@@ -40,6 +40,9 @@
   display: flex;
   width: 500px;
   height: 500px;
+  box-shadow: 0 2px 1px 0 var(--modal-background);
+  box-shadow: 0 1px 1px 0 rgba(0, 0 , 0 , 0.14);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .modal-content .close-button{
@@ -173,9 +176,6 @@ header li{
   border-radius: 5px;
   content: '';
   display: flex;
-}
-
-.nav-list a{
 }
 
 .header-contacts{
@@ -327,7 +327,7 @@ header li{
   background-image: linear-gradient(0deg, var(--background-filter-2), var(--background-filter-2));
   color: var(--white-text);
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
   right: 0px;
   left: 0px;
   padding: 27px;
@@ -436,7 +436,7 @@ header li{
 .clients-section svg{
   width: 106px;
   height: 60px;
-}
+}box
 
 .portfolio main .container{
   padding-top: 94px;

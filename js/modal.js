@@ -7,10 +7,16 @@
       modal: document.querySelector("[data-modal]"),
     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtn.addEventListener("click", openModal);
+    refs.closeModalBtn.addEventListener("click", closeModal);
   
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
+    function openModal() {
+      refs.modal.classList.remove("is-hidden");
+      refs.modal.classList.add("is-visible");
+    }
+
+    function closeModal(){
+      refs.modal.classList.add("is-hidden");
+      refs.modal.classList.remove("is-visible");
     }
   })();
