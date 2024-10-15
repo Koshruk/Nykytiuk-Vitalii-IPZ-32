@@ -69,12 +69,19 @@
 }
 
 .is-visible .modal-content{
-  opacity: 1;
   animation: show 200ms;
 }
 
 .close .modal-content{
   animation: hide 200ms;
+}
+
+.is-visible{
+  animation: show-overlay 200ms;
+}
+
+.close{
+  animation: hide-overlay 200ms;
 }
 
 
@@ -97,6 +104,24 @@
   to{
     opacity: 0;
     transform: translateY(100%);
+  }
+}
+
+@keyframes show-overlay{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes hide-overlay{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
   }
 }
 
@@ -145,6 +170,8 @@ a {
   transition-duration: 250ms;
 }
 
+
+
 a:hover {
   color: var(--active-color);
 }
@@ -192,6 +219,14 @@ header li{
   gap: 50px;
 }
 
+.main-page .main-page-navigation a{
+  position: relative;
+}
+
+.portfolio .portfolio-page-navigation a{
+  position: relative;
+}
+
 .main-page .main-page-navigation a::after{
   height: 4px;
   width: 100%;
@@ -199,16 +234,21 @@ header li{
   border-radius: 2px;
   content: '';
   display: flex;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 }
 
 .portfolio .portfolio-page-navigation a::after{
   height: 4px;
   width: 100%;
   background-color: var(--active-color);
-  border-radius: 5px;
+  border-radius: 2px;
   content: '';
   display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 }
 
 .header-contacts{
@@ -218,6 +258,8 @@ header li{
 
 .header-contacts svg{
   margin-right: 10px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .header-link{
@@ -469,11 +511,10 @@ header li{
 .clients-section svg{
   width: 106px;
   height: 60px;
-}box
+}
 
-.portfolio main .container{
-  padding-top: 94px;
-  padding-bottom: 94px;
+.portfolio .main-section{
+  padding: 94px 0px;
 }
 
 
