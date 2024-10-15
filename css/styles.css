@@ -19,9 +19,52 @@
   --border-color-header: rgb(236, 236, 236);
   --border-color-portfolio: rgb(238, 238, 238);
   --pale-icon-color: rgb(175, 177, 184);
+  --modal-background: rgba(0, 0, 0, 0.2);
 }
 
-p, h1, h2, h3, a, ul, li, figure, body, img{
+.modal {
+  display: flex; /* or use flex or grid depending on your layout */
+  position:fixed; /* Ensure it stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-background); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: var(--white-text);
+  padding: 8px;
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
+
+.modal-content .close-button{
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: rgba(0, 0 , 0 , 0.1);
+  margin-left: auto;
+  padding: 9px;
+  max-height: 30px;
+  max-width: 30px;
+  background-color: var(--white-text);
+  color: black;     
+}
+
+.close-button svg{
+  display: block;
+  height: 11px;
+  width: 11px;
+}
+
+.is-hidden{
+  display: none;
+}
+
+p, h1, h2, h3, a, ul, li, figure, body, img, button{
   margin: 0;
   padding: 0;
 }
@@ -133,7 +176,6 @@ header li{
 }
 
 .nav-list a{
-  padding: 32px 0;
 }
 
 .header-contacts{
@@ -483,7 +525,7 @@ header li{
   padding: 63px 24px;
 
   transform: translateY(100%);
-  transition: transform 500ms;
+  transition: transform linear 250ms;
 }
 
 .figures-portfolio .figure-overlay p{

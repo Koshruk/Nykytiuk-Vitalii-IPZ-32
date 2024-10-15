@@ -55,7 +55,7 @@
       <section class = "title-section">
       <div class = "container">
         <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button"  data-modal-open>Замовити послугу</button>
       </section>
       <section class = "info-section">
       <div class="container">
@@ -438,5 +438,16 @@
         </div>
       </div>
     </footer>
+    
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button type="button" class="close-button" data-modal-close>
+          <svg>
+            <use href = "./images/icons.svg#cross-icon">
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
