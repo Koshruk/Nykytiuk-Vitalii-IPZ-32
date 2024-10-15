@@ -16,7 +16,11 @@
     }
 
     function closeModal(){
+      refs.modal.classList.remove("is-visible");
+      refs.modal.classList.add("close");
+      setTimeout(() => {
       refs.modal.classList.add("is-hidden");
-      efs.modal.classList.remove("is-visible");
+      refs.modal.classList.remove("close");
+      }, 200);
     }
   })();

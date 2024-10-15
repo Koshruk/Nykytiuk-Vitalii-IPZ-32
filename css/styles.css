@@ -73,7 +73,7 @@
   animation: show 200ms;
 }
 
-.is-hidden .modal-content{
+.close .modal-content{
   animation: hide 200ms;
 }
 
