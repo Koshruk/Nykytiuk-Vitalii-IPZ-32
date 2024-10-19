@@ -36,10 +36,10 @@
 
 .modal-content{
   background-color: var(--white-text);
-  padding: 8px;
   display: flex;
   width: 528px;
   height: 581px;
+  padding: 40px;
   position: absolute;
   box-shadow: 0 2px 1px 0 var(--modal-background);
   box-shadow: 0 1px 1px 0 rgba(0, 0 , 0 , 0.14);
@@ -47,10 +47,12 @@
 }
 
 .modal-content .close-button{
+  position: absolute;
   border-radius: 50%;
   border-width: 1px;
   border-color: rgba(0, 0 , 0 , 0.1);
-  margin-left: auto;
+  top: 8px;
+  right: 8px;
   padding: 9px;
   max-height: 30px;
   max-width: 30px;
@@ -633,6 +635,7 @@ address {
   display: flex;
   flex-direction: column;
   margin-top: 28px;
+  white-space: nowrap;
 }
 
 address a {
@@ -642,11 +645,11 @@ address a {
 
 footer .container{
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 footer .footer-button-links{
-  margin-left: 70px;
+  margin-left: 100px;
 }
 
 footer .footer-button-links ul{
@@ -681,6 +684,67 @@ footer .footer-button-links a:hover{
   height: 20px;
 }
 
+footer .footer-email-field{
+  margin-left: 94px;
+  width: 100%;
+  max-width: 570px;
+}
+
+footer .footer-email-field .form-row{
+  margin-top: 20px; 
+  display: flex;
+  gap: 12px;
+}
+
+
+footer .footer-email-field .mailing-form{
+  width: 100%;
+}
+
+footer .footer-email-field .mailing-form input{
+  position: relative;
+  background-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--white-text);
+  width: 100%;
+  height: 100%;
+  padding-left: 70px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+footer .footer-email-field .mailing-form label{
+  position: absolute;
+  padding: 15px;
+  color: var(--address-link-color);
+  font-size: 16px;
+  line-height: 1.25;
+  pointer-events: none;
+}
+
+footer .footer-email-field .form-row button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 28px;
+  
+  background-color: var(--active-color);
+  border-style: none;
+  border-radius: 4px;
+ 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer-email-field .form-row button .send-email-svg{
+  max-width: 24px;
+  max-height: 24px;
+}
 /*
 
 /*
