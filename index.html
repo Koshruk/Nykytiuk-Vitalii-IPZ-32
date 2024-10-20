@@ -435,19 +435,19 @@
             </li>
           </ul>
         </div>
-        <div class = "footer-email-field">
+        <div class="footer-email-field">
           <h3>Підпишіться на розсилку</h3>
           <div class="form-row">
-          <form class = "mailing-form" name = "mailing_form" novalidate>
-            <label for = "footer-email">E-mail</label>
-            <input type="email" name="email" id = "footer-email">
-          </form>
-          <button type="button" class="send-button">
-            Підписатися
-            <svg class="send-email-svg">
-              <use href = "./images/icons.svg#send-icon"></use>
-            </svg>
-          </button>
+            <form class="mailing-form" name="mailing_form" novalidate>
+              <label for="footer-email">E-mail</label>
+              <input type="email" name="email" id="footer-email" />
+            </form>
+            <button type="submit" class="send-button">
+              Підписатися
+              <svg class="send-email-svg">
+                <use href="./images/icons.svg#send-icon"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -460,6 +460,67 @@
             <use href="./images/icons.svg#cross-icon"></use>
           </svg>
         </button>
+        <div class="user-input-form">
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <ul class="forms-list">
+            <li>
+              <form class="modal-form-name" name="modal_form_name" novalidate>
+                <label for="modal-form-input">Ім'я</label>
+                <div class="input-container">
+                  <svg>
+                    <use href="./images/icons.svg#person-icon"></use>
+                  </svg>
+                  <input type="email" name="email" id="modal-form-input" />
+                </div>
+              </form>
+            </li>
+            <li>
+              <form class="modal-form-number" name="modal_form_number" novalidate>
+                <label for="modal-form-input">Телефон</label>
+                <div class="input-container">
+                  <svg>
+                    <use href="./images/icons.svg#telephone-icon"></use>
+                  </svg>
+                  <input type="email" name="email" id="modal-form-input" />
+                </div>
+              </form>
+            </li>
+            <li>
+              <form class="modal-form-email" name="modal_form_email" novalidate>
+                <label for="modal-form-input">Пошта</label>
+                <div class="input-container">
+                  <svg>
+                    <use href="./images/icons.svg#email-icon"></use>
+                  </svg>
+                  <input type="email" name="email" id="modal-form-input" />
+                </div>
+              </form>
+            </li>
+            <li>
+              <form class="modal-form-comment" name="modal_form_comment" novalidate>
+                <label for="modal-form-input">Коментар</label>
+                <div class="input-container">
+                  <textarea type="email" rows="5" name="email" id="modal-form-input" placeholder="Введіть текст"></textarea>
+                </div>
+              </form>
+            </li>
+          </ul>
+          <form class="modal-agree-checkbox" name="modal_agree_checkbox">
+            <input type="checkbox" id="agree-checkbox" name="agree">
+            <span>
+              <svg class="checked-icon">
+                <use href="./images/icons.svg#checked-icon">
+              </svg>
+              <svg class="unchecked-icon">
+                <use href="./images/icons.svg#unchecked-icon">
+              </svg>
+            </span>
+            <label for="agree-checkbox">Погоджуюся з розсилкою та приймаю <a href="https://github.com/Koshruk/Nykytiuk-Vitalii-IPZ-32">Умови договору</a></label>
+          </form>
+          <button type="submit" class="modal-send-button">
+            Відправити
+          </button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

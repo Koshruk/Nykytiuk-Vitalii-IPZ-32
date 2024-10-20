@@ -8,6 +8,7 @@
   --active-color: rgb(33, 148, 243);
   --active-color-overlay: rgba(33, 148, 243, 0.9);
   --main-text-color: rgb(33, 33, 33);
+  --modal-form-border-color:rgba(33, 33, 33, 0.2);
   --pale-text-color: rgb(117, 117, 117);
   --white-text: rgb(255, 255, 255);
   --address-link-color: rgba(255, 255, 255, 0.6);
@@ -36,9 +37,8 @@
 
 .modal-content{
   background-color: var(--white-text);
-  display: flex;
   width: 528px;
-  height: 581px;
+  display: flex;
   padding: 40px;
   position: absolute;
   box-shadow: 0 2px 1px 0 var(--modal-background);
@@ -60,10 +60,144 @@
   color: black;     
 }
 
+.modal-content .user-input-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.modal-content .user-input-form h2{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-content .user-input-form .forms-list{
+  width: 100%;
+}
+
+.modal-content .user-input-form .forms-list .input-container:focus-within{
+  color: var(--active-color);
+}
+
+.modal-content .user-input-form .forms-list .input-container input:focus{
+  border-color: var(--active-color);
+}
+
+.modal-content .user-input-form .forms-list .input-container textarea:focus{
+  border-color: var(--active-color);
+}
+
+.modal-content .user-input-form .forms-list li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.modal-content .user-input-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-content form label{
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--pale-text-color);
+}
+
+.modal-content .user-input-form form input, .modal-content .user-input-form form textarea{
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+
+  outline: none;
+  padding: 12px 42px;
+  max-height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: var(--modal-form-border-color);
+  border-style: solid;
+}
+
+.modal-content .user-input-form .modal-form-comment textarea{
+  padding: 12px 16px;
+  max-height: none;
+  resize: none;
+}
+
+.modal-content .user-input-form form .input-container{
+  position: relative;
+}
+
+.modal-content .user-input-form .modal-agree-checkbox{
+  margin-top: 20px;
+  flex-direction: row;
+  gap:8px;
+  justify-content: center;
+  align-items: baseline;
+  user-select: none;
+  position: relative;
+}
+
+.modal-content .user-input-form .modal-agree-checkbox input{
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.modal-content .user-input-form .modal-agree-checkbox label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
+}
+
+.modal-content .user-input-form .modal-agree-checkbox input[type="checkbox"]{
+  display: none;
+}
+
+.modal-content .user-input-form .modal-agree-checkbox svg{
+  max-height: 16px;
+  max-width: 15px;
+}
+
+.modal-content .user-input-form .modal-agree-checkbox label a{
+  color: var(--active-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.modal-content .user-input-form svg{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+
+
 .close-button svg{
   display: block;
   height: 11px;
   width: 11px;
+}
+
+.modal-content .modal-send-button{
+  margin-top: 30px;
+  background-color: var(--active-color);
+  border-radius: 4px;
+  padding: 10px 52px;
+  border-style: solid;
+  border-color: var(--active-color);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .is-hidden{
