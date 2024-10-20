@@ -506,8 +506,9 @@
             </li>
           </ul>
           <form class="modal-agree-checkbox" name="modal_agree_checkbox">
-            <input type="checkbox" id="agree-checkbox" name="agree">
-            <span>
+            <label for="agree-checkbox">
+              <input type="checkbox" id="agree-checkbox" name="agree">
+            <span for="agree-checkbox">
               <svg class="checked-icon">
                 <use href="./images/icons.svg#checked-icon">
               </svg>
@@ -515,7 +516,8 @@
                 <use href="./images/icons.svg#unchecked-icon">
               </svg>
             </span>
-            <label for="agree-checkbox">Погоджуюся з розсилкою та приймаю <a href="https://github.com/Koshruk/Nykytiuk-Vitalii-IPZ-32">Умови договору</a></label>
+              Погоджуюся з розсилкою та приймаю <a href="https://github.com/Koshruk/Nykytiuk-Vitalii-IPZ-32">Умови договору</a>
+            </label>
           </form>
           <button type="submit" class="modal-send-button">
             Відправити
