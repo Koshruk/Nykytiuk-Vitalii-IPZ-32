@@ -7,6 +7,7 @@
 :root {
   --active-color: rgb(33, 148, 243);
   --active-color-overlay: rgba(33, 148, 243, 0.9);
+  --active-color-darker: rgb(24, 140, 232);
   --main-text-color: rgb(33, 33, 33);
   --modal-form-border-color:rgba(33, 33, 33, 0.2);
   --pale-text-color: rgb(117, 117, 117);
@@ -45,6 +46,7 @@
 }
 
 .modal-content .close-button{
+  border-style: solid;
   position: absolute;
   border-radius: 50%;
   border-width: 1px;
@@ -56,6 +58,10 @@
   max-width: 30px;
   background-color: var(--white-text);
   color: black;     
+}
+
+.modal-content .close-button:hover{
+  color: var(--active-color);
 }
 
 .modal-content .user-input-form{
@@ -201,7 +207,7 @@
 .modal-content .user-input-form .modal-agree-checkbox label a{
   color: var(--active-color);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 }
 
 .modal-content .user-input-form svg{
@@ -221,14 +227,24 @@
 }
 
 .modal-content .modal-send-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
   margin-top: 30px;
   background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 52px;
   border-style: solid;
   border-color: var(--active-color);
   margin-right: auto;
   margin-left: auto;
+}
+
+.modal-content .modal-send-button:hover{
+  background-color: var(--active-color-darker);
 }
 
 .is-hidden{
@@ -483,6 +499,10 @@ header li{
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.title-section button:hover{
+  background-color: var(--active-color-darker);
 }
 
 .header-contacts {
@@ -907,9 +927,13 @@ footer .footer-email-field .form-row button{
   gap: 10px;
 }
 
+footer .footer-email-field .form-row button:hover{
+  background-color: var(--active-color-darker);
+}
+
 footer .footer-email-field .form-row button .send-email-svg{
-  max-width: 24px;
-  max-height: 24px;
+  width: 24px;
+  height: 24px;
 }
 /*
 
