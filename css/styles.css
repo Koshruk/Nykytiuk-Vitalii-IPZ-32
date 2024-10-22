@@ -175,7 +175,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-  
 }
 
 .modal-agree-checkbox .unchecked-icon {
@@ -189,6 +188,7 @@
 .modal-agree-checkbox input[type="checkbox"]:checked + span .checked-icon {
   display: block;
   background-color: var(--active-color);
+  border-radius: 2px;
 }
 
 
