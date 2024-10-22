@@ -179,15 +179,15 @@
 }
 
 .modal-agree-checkbox .unchecked-icon {
-  display: block; /* Show unchecked icon by default */
+  display: block;
 }
 
 .modal-agree-checkbox .checked-icon {
-  display: none; /* Hide checked icon by default */
+  display: none;
 }
 
 .modal-agree-checkbox input[type="checkbox"]:checked + span .checked-icon {
-  display: block; /* Show checked icon when checkbox is checked */
+  display: block;
   background-color: var(--active-color);
 }
 
