@@ -437,18 +437,23 @@
         </div>
         <div class="footer-email-field">
           <h3>Підпишіться на розсилку</h3>
-          <div class="form-row">
-            <form class="mailing-form" name="mailing_form" novalidate>
-              <label for="footer-email">E-mail</label>
-              <input type="email" name="email" id="footer-email" placeholder="E-mail" />
-            </form>
-            <button type="submit" class="send-button">
-              Підписатися
-              <svg class="send-email-svg">
-                <use href="./images/icons.svg#send-icon"></use>
-              </svg>
-            </button>
-          </div>
+          <form class="mailing-form" name="mailing_form" novalidate>
+            <label for="footer-email">E-mail</label>
+            <div class="form-row">
+              <input
+                type="email"
+                name="email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="send-button">
+                Підписатися
+                <svg class="send-email-svg">
+                  <use href="./images/icons.svg#send-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -462,9 +467,9 @@
         </button>
         <div class="user-input-form">
           <h2>Залиште свої дані, ми вам передзвонимо</h2>
-          <ul class="forms-list">
-            <li>
-              <form class="modal-form-name" name="modal_form_name" novalidate>
+          <form class="modal-form" name="modal_form_name" novalidate>
+            <ul class="form-list">
+              <li>
                 <label for="modal-form-input">Ім'я</label>
                 <div class="input-container">
                   <svg>
@@ -472,10 +477,8 @@
                   </svg>
                   <input type="email" name="email" id="modal-form-input" />
                 </div>
-              </form>
-            </li>
-            <li>
-              <form class="modal-form-number" name="modal_form_number" novalidate>
+              </li>
+              <li>
                 <label for="modal-form-input">Телефон</label>
                 <div class="input-container">
                   <svg>
@@ -483,10 +486,8 @@
                   </svg>
                   <input type="email" name="email" id="modal-form-input" />
                 </div>
-              </form>
-            </li>
-            <li>
-              <form class="modal-form-email" name="modal_form_email" novalidate>
+              </li>
+              <li>
                 <label for="modal-form-input">Пошта</label>
                 <div class="input-container">
                   <svg>
@@ -494,34 +495,36 @@
                   </svg>
                   <input type="email" name="email" id="modal-form-input" />
                 </div>
-              </form>
-            </li>
-            <li>
-              <form class="modal-form-comment" name="modal_form_comment" novalidate>
+              </li>
+              <li>
                 <label for="modal-form-input">Коментар</label>
                 <div class="input-container">
-                  <textarea rows="5" name="email" id="modal-form-input" placeholder="Введіть текст"></textarea>
+                  <textarea
+                    rows="5"
+                    name="email"
+                    id="modal-form-input"
+                    placeholder="Введіть текст"
+                  ></textarea>
                 </div>
-              </form>
-            </li>
-          </ul>
-          <form class="modal-agree-checkbox" name="modal_agree_checkbox">
-            <label for="agree-checkbox">
-              <input type="checkbox" id="agree-checkbox" name="agree">
-            <span for="agree-checkbox">
-              <svg class="checked-icon">
-                <use href="./images/icons.svg#checked-icon"></use>
-              </svg>
-              <svg class="unchecked-icon">
-                <use href="./images/icons.svg#unchecked-icon"></use>
-              </svg>
-            </span>
-              Погоджуюся з розсилкою та приймаю&nbsp;<a href="https://github.com/Koshruk/Nykytiuk-Vitalii-IPZ-32">Умови договору</a>
+              </li>
+            </ul>
+            <label class="agree-checkbox" for="checkbox-agree">
+              <input type="checkbox" id="checkbox-agree" name="agree" />
+              <span for="checkbox-agree">
+                <svg class="checked-icon">
+                  <use href="./images/icons.svg#checked-icon"></use>
+                </svg>
+                <svg class="unchecked-icon">
+                  <use href="./images/icons.svg#unchecked-icon"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю&nbsp;<a
+                href="https://github.com/Koshruk/Nykytiuk-Vitalii-IPZ-32"
+                >Умови договору</a
+              >
             </label>
+            <button type="submit" class="modal-send-button">Відправити</button>
           </form>
-          <button type="submit" class="modal-send-button">
-            Відправити
-          </button>
         </div>
       </div>
     </div>
