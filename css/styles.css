@@ -7,7 +7,9 @@
 :root {
   --active-color: rgb(33, 148, 243);
   --active-color-overlay: rgba(33, 148, 243, 0.9);
+  --active-color-darker: rgb(24, 140, 232);
   --main-text-color: rgb(33, 33, 33);
+  --modal-form-border-color:rgba(33, 33, 33, 0.2);
   --pale-text-color: rgb(117, 117, 117);
   --white-text: rgb(255, 255, 255);
   --address-link-color: rgba(255, 255, 255, 0.6);
@@ -36,21 +38,21 @@
 
 .modal-content{
   background-color: var(--white-text);
-  padding: 8px;
-  display: flex;
   width: 528px;
-  height: 581px;
+  display: flex;
+  padding: 40px;
   position: absolute;
-  box-shadow: 0 2px 1px 0 var(--modal-background);
-  box-shadow: 0 1px 1px 0 rgba(0, 0 , 0 , 0.14);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px 0 var(--modal-background), 0 1px 1px 0 rgba(0, 0 , 0 , 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .modal-content .close-button{
+  border-style: solid;
+  position: absolute;
   border-radius: 50%;
   border-width: 1px;
   border-color: rgba(0, 0 , 0 , 0.1);
-  margin-left: auto;
+  top: 8px;
+  right: 8px;
   padding: 9px;
   max-height: 30px;
   max-width: 30px;
@@ -58,10 +60,198 @@
   color: black;     
 }
 
+.modal-content .close-button:hover{
+  color: var(--active-color);
+}
+
+.modal-content .user-input-form{
+  width: 100%;
+  align-items: center;
+}
+
+
+.modal-content .user-input-form h2{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content .user-input-form .form-list{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-content .form-list li{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-content .form-list li:not(:last-child){
+  margin-bottom: 10px;
+} 
+
+.modal-content .form-list .input-container:focus-within{
+  color: var(--active-color);
+}
+
+.modal-content .form-list .input-container input:focus{
+  border-color: var(--active-color);
+}
+
+.modal-content .form-list .input-container textarea:focus{
+  border-color: var(--active-color);
+}
+
+
+.modal-content form label{
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--pale-text-color);
+}
+
+.modal-content .user-input-form input, .modal-content .user-input-form textarea{
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+
+  outline: none;
+  padding: 12px 42px;
+  max-height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: var(--modal-form-border-color);
+  border-style: solid;
+}
+
+.modal-content .user-input-form textarea{
+  padding: 12px 16px;
+  max-height: none;
+  resize: none;
+}
+
+.modal-content .user-input-form .input-container{
+  position: relative;
+}
+
+
+.modal-content .user-input-form .agree-checkbox{
+  user-select: none;
+  position: relative;
+}
+
+.modal-content .user-input-form .agree-checkbox input{
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.modal-content .user-input-form .agree-checkbox{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.modal-content .user-input-form .agree-checkbox input[type="checkbox"]{
+  display: none;
+}
+
+
+/*
+.modal-content .user-input-form .agree-checkbox label{
+  display: flex;
+  align-items:center;
+}
+*/
+.modal-content .user-input-form .agree-checkbox span{
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.modal-content .user-input-form .agree-checkbox svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.agree-checkbox .unchecked-icon {
+  display: block;
+}
+
+.agree-checkbox .checked-icon {
+  display: none;
+}
+
+.agree-checkbox input[type="checkbox"]:checked + span .checked-icon {
+  display: block;
+  background-color: var(--active-color);
+  border-radius: 2px;
+}
+
+
+.agree-checkbox input[type="checkbox"]:checked + span .unchecked-icon {
+  display: none;
+}
+
+
+
+.modal-content .user-input-form .agree-checkbox a{
+  color: var(--active-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.modal-content .user-input-form svg{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+
+
 .close-button svg{
   display: block;
   height: 11px;
   width: 11px;
+}
+
+.modal-content .modal-send-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  margin-top: 30px;
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 52px;
+  border-style: solid;
+  border-color: var(--active-color);
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modal-content .modal-send-button:hover{
+  background-color: var(--active-color-darker);
 }
 
 .is-hidden{
@@ -316,6 +506,10 @@ header li{
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.title-section button:hover{
+  background-color: var(--active-color-darker);
 }
 
 .header-contacts {
@@ -633,6 +827,7 @@ address {
   display: flex;
   flex-direction: column;
   margin-top: 28px;
+  white-space: nowrap;
 }
 
 address a {
@@ -642,11 +837,11 @@ address a {
 
 footer .container{
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 footer .footer-button-links{
-  margin-left: 70px;
+  margin-left: 100px;
 }
 
 footer .footer-button-links ul{
@@ -681,6 +876,72 @@ footer .footer-button-links a:hover{
   height: 20px;
 }
 
+footer .footer-email-field{
+  margin-left: 94px;
+  width: 100%;
+  max-width: 570px;
+}
+
+
+
+footer .footer-email-field .mailing-form{
+  width: 100%;
+  margin-top: 20px; 
+}
+
+footer .footer-email-field .mailing-form .form-row{
+  display: flex;
+  gap: 12px;
+}
+
+footer .footer-email-field .mailing-form input{
+  background-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--white-text);
+  width: 100%;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+footer .footer-email-field .mailing-form label{
+  position: absolute;
+  padding: 15px;
+  color: var(--address-link-color);
+  font-size: 16px;
+  line-height: 1.25;
+  pointer-events: none;
+  display: none;
+}
+
+footer .footer-email-field button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  background-color: var(--active-color);
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer .footer-email-field button:hover{
+  background-color: var(--active-color-darker);
+}
+
+footer .footer-email-field button .send-email-svg{
+  width: 24px;
+  height: 24px;
+}
 /*
 
 /*
