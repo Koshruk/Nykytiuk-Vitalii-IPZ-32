@@ -41,7 +41,7 @@
             </svg>
             <a class="contacts-list_link" href="info@devstudio.com"> info@devstudio.com </a> <!--element-->
           </li>
-          <li class="contacts-list_item">
+          <li class="contacts-list_item"> <!--element-->
             <svg class="contacts-list_svg"> <!--element-->
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
@@ -52,32 +52,32 @@
     </header>
 
     <main>
-      <section class="title-section">
-        <div class="container">
-          <h1>Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" data-modal-open>Замовити послугу</button>
+      <section class="hero"> <!--block-->
+        <div class="container"> <!--block-->
+          <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1> <!--element-->
+          <button class="button hero_button" type="button" data-modal-open>Замовити послугу</button> <!--block-->
         </div>
       </section>
-      <section class="info-section">
-        <div class="container">
-          <h2>Наші особливості</h2>
+      <section class="info-section"> <!--block-->
+        <div class="container"> <!--block-->
+          <h2 class="info-section_title">Наші особливості</h2> 
           <!--Прихований заголовок-->
-          <ul>
-            <li>
-              <div class="colored-container">
+          <ul class="info-section_list">
+            <li class="info-section_item">
+              <div class="info-section_svg-container">
                 <svg>
-                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                  <use  href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3>Увага до деталей</h3>
+              <h3 class="">Увага до деталей</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li>
-              <div class="colored-container">
+            <li class="info-section_item">
+              <div class="info-section_svg-container">
                 <svg>
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -89,8 +89,8 @@
               </p>
             </li>
 
-            <li>
-              <div class="colored-container">
+            <li class="info-section_item">
+              <div class="info-section_svg-container">
                 <svg>
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -101,8 +101,8 @@
               </p>
             </li>
 
-            <li>
-              <div class="colored-container">
+            <li class="info-section_item">
+              <div class="info-section_svg-container">
                 <svg>
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
