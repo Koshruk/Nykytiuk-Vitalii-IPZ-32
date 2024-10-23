@@ -43,32 +43,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container{
-  max-width: 1200px;
-  padding: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-ul {
-  list-style-type: none;
-  list-style-position: inside;
-}
-
-button {
-  color: var(--white-text);
-  appearance: none;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 
 
 a:hover {

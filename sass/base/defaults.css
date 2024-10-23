@@ -1,0 +1,46 @@
+p, h1, h2, h3, a, ul, li, figure, body, img, button {
+  margin: 0;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+button {
+  color: var(--white-text);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}/*# sourceMappingURL=defaults.css.map */

@@ -1,0 +1,15 @@
+.contacts-list {
+  gap: 40px;
+  margin-left: auto;
+}
+.contacts-list_item {
+  display: flex;
+  align-items: center;
+}
+.contacts-list_svg {
+  margin-right: 10px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  max-height: 16px;
+  max-width: 16px;
+}/*# sourceMappingURL=header-contacts.css.map */

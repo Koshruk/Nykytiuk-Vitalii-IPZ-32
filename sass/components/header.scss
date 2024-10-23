@@ -1,0 +1,17 @@
+.header{
+    border-bottom: 1px solid var(--border-color-header);
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    a{
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        padding: 25px 0;
+    }
+    ul, li{
+        display: flex;
+    }
+  }
+  
+    
