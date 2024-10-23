@@ -1,0 +1,37 @@
+.info-section{
+    padding-top: 94px;
+
+    &_title{
+        display: none;
+    }
+
+    &_item{
+        max-width: 270px;
+        text-align: left;
+    }
+
+    &_svg-container{
+        margin-bottom: 30px;
+        padding: 25px 0;
+        background-color: $light-background-color;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_svg{
+        width: 70px;
+        height: 70px;
+    }
+
+    &_item-title{
+        font-weight: 700;
+        text-transform: uppercase;
+
+        margin-bottom: 10px;
+    }
+
+    &_text{
+        line-height: 1.71;
+        color: $pale-color;
+    }
+}

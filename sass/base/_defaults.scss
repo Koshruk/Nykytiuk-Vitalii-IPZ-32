@@ -82,10 +82,45 @@ body {
   .list-section{
     padding-bottom: 94px;
 
-    .container{
-      text-align: center;
-    }
+    text-align: center;
+
     &_list{
       display: flex;
+      justify-content:space-between;
+    }
+
+    &_title{
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .links-list{
+    max-height: 44px;
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    &_item{
+      display: flex;
+      max-width: 44px;
+    }
+
+    &_link{
+      padding: 12px;
+      border-radius: 50%;
+      background-color: $white;
+      color: $pale-icon-color;
+      &:hover{
+        background-color: $active-color;
+        color: $white;
+      }
+    }
+
+    &_svg{
+      width: 20px;
+      height: 20px;
     }
   }

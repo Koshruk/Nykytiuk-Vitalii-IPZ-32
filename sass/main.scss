@@ -1,8 +1,10 @@
 @import 'utils/variables';
+@import 'base/defaults';
 @import 'components/header';
 @import 'components/header-nav';
 @import 'components/header-contacts';
 @import 'components/logo';
 @import 'components/index/hero';
 @import 'components/index/info-section';
-@import 'base/defaults';
+@import 'components/index/pictures-section';
+@import 'components/index/employees-section';
