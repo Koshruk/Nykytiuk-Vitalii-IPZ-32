@@ -78,3 +78,14 @@ body {
       background-color: $active-darkened-color;
     }
   }
+
+  .list-section{
+    padding-bottom: 94px;
+
+    .container{
+      text-align: center;
+    }
+    &_list{
+      display: flex;
+    }
+  }

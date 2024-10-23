@@ -69,6 +69,10 @@
   padding-right: 24px;
 }
 
+.info-section {
+  padding-top: 94px;
+}
+
 p, h1, h2, h3, a, ul, li, figure, body, img, button {
   margin: 0;
   padding: 0px;
@@ -145,4 +149,14 @@ h1 {
 }
 .button:hover {
   background-color: #188ce8;
+}
+
+.list-section {
+  padding-bottom: 94px;
+}
+.list-section .container {
+  text-align: center;
+}
+.list-section_list {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
