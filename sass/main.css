@@ -92,7 +92,6 @@ h1 {
 
 .links-list {
   max-height: 44px;
-  margin-top: 16px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -255,4 +254,29 @@ h1 {
 .employees-section_figure-text {
   font-size: 16px;
   color: #757575;
+}
+.employees-section_links-list {
+  margin-top: 16px;
+}
+
+.clients-section {
+  padding-top: 94px;
+}
+.clients-section_link {
+  display: flex;
+  max-width: 170px;
+  padding: 16px 32px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #afb1b8;
+  border-color: #afb1b8;
+  background-color: #ffffff;
+  border-style: solid;
+}
+.clients-section_link:hover {
+  border-color: #2196f3;
+}
+.clients-section_svg {
+  max-width: 106px;
+  max-height: 60px;
 }/*# sourceMappingURL=main.css.map */
