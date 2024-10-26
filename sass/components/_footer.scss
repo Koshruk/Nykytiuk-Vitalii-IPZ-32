@@ -1,0 +1,52 @@
+.footer{
+    background-color: $background-color;
+    padding: 60px 0px 60px;
+    color: $white;
+
+    .container{
+        display: flex;
+        align-items: baseline;
+    }
+
+    &_title{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &_links-section{
+        margin-left: 100px
+    }
+
+    &_address{
+        margin-top: 28px;
+    }
+
+    &_field-section{
+        margin-left: 94px;
+        width: 100%;
+        max-width: 570px;
+    }
+
+    &_form{
+        display: flex;
+        gap: 12px;
+    }
+
+    &_input{
+        background-color: inherit;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $white-opaque30-color;
+        border-radius: 4px;
+        color: $white;
+        width: 100%;
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    &_button{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}

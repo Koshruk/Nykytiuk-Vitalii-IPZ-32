@@ -77,6 +77,17 @@ body {
     &:hover{
       background-color: $active-darkened-color;
     }
+
+    &--svg-right{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &_svg{
+      max-height: 24px;
+      max-width: 24px;
+    }
   }
 
   .list-section{
@@ -105,21 +116,49 @@ body {
     &_item{
       display: flex;
       max-width: 44px;
+
     }
 
     &_link{
       padding: 12px;
       border-radius: 50%;
-      background-color: $white;
-      color: $pale-icon-color;
+
       &:hover{
         background-color: $active-color;
         color: $white;
+      }
+
+      &--on-white{
+        background-color: $white;
+        color: $pale-icon-color;
+      }
+
+      &--on-black{
+        background-color: $opaque10-white;
       }
     }
 
     &_svg{
       width: 20px;
       height: 20px;
+    }
+  }
+
+  .address{
+    line-height: 1.14;
+    letter-spacing: 0.033em;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    &_link{
+      color: $opaque60-white;
+      margin-top: 12px;
+    }
+  }
+
+  .form{
+    &_label{
+      display: none;
     }
   }
