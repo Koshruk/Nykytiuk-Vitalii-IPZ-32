@@ -170,6 +170,16 @@ body {
 
   .is-visible{
     display: flex;
+    animation: show-overlay 200ms;
+
+    &_content{
+      animation: show 200ms;
+    }
+}
+
+.close{
+  animation: hide-overlay 200ms;
+  .close-content{
+    animation: hide 200ms;
   }
-
-
+}
