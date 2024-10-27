@@ -201,6 +201,56 @@ h1 {
   animation: hide 200ms;
 }
 
+.figure {
+  border: 1px solid #eeeeee;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.figure_caption {
+  padding: 20px 24px 20px;
+}
+.figure_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.figure_text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
+}
+.figure:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+.figure:hover .figure_overlay {
+  transform: translateY(0);
+}
+.figure_image-wrapper {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  overflow: hidden;
+}
+.figure_overlay {
+  background-image: linear-gradient(0deg, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
+  color: #ffffff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0px;
+  left: 0px;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform linear 250ms;
+}
+.figure_overlay-text {
+  font-size: 18px;
+  line-height: 1.56;
+}
+
 .header {
   border-bottom: 1px solid var(--border-color-header);
 }
@@ -216,12 +266,11 @@ h1 {
 .header ul, .header li {
   display: flex;
 }
-
-.nav {
+.header_nav {
   margin-left: 93px;
 }
-.nav_list {
-  gap: 50px;
+.header_nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contacts-list {
@@ -522,6 +571,46 @@ h1 {
   display: block;
   height: 11px;
   width: 11px;
+}
+
+.portfolio-section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.portfolio-section_navigation {
+  margin-bottom: 50px;
+}
+.portfolio-section_nav-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.portfolio-section_nav-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: inherit;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+.portfolio-section_nav-button:hover, .portfolio-section_nav-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08);
+}
+.portfolio-section_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.portfolio-section_item {
+  max-width: 370px;
 }
 
 .user-input-form {

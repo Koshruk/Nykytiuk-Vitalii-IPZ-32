@@ -12,6 +12,14 @@
     ul, li{
         display: flex;
     }
+
+    &_nav{
+        margin-left: 93px;
+    }
+
+    &_nav-item:not(:last-child){
+        margin-right: 30px;
+    }
   }
   
     

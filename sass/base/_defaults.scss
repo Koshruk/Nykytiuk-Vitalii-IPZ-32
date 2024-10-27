@@ -183,3 +183,61 @@ body {
     animation: hide 200ms;
   }
 }
+
+.figure{
+  border: 1px solid $figure-border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &_caption{
+    padding: 20px 24px 20px;
+  }
+
+  &_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  &_text{
+    font-size: 16px;
+    line-height: 1.88;
+    color: $pale-color;
+  }
+
+  &:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    .figure_overlay{
+      transform: translateY(0);
+    }
+  }
+
+  &_image-wrapper{
+    position: relative;
+      width:max-content;
+      overflow: hidden;
+  }
+
+  &_overlay{
+    background-image: linear-gradient(0deg, $active-overlay-color, $active-overlay-color);
+  color: $white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0px;
+  left: 0px;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform linear 250ms;
+  }
+
+  &_overlay-text{
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
