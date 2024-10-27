@@ -9,7 +9,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -146,6 +146,14 @@ h1 {
   display: none;
 }
 
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: flex;
+}
+
 .header {
   border-bottom: 1px solid var(--border-color-header);
 }
@@ -192,6 +200,80 @@ h1 {
 }
 .logo span {
   color: #2196f3;
+}
+
+.agree-checkbox {
+  line-height: 1.71;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  /*
+
+  &_checked-icon, &_unchecked-icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 15px;
+      max-height: 16px;
+  }
+
+  &_checked-icon{
+      display: none;
+  }
+
+  &_unchecked-icon{
+      display: block;
+  }
+
+  &_input[type="checkbox"]:checked + &_checked-icon{
+      display: block;
+      background-color: $active-color;
+      border-radius: 2px;
+  }
+  &_input[type="checkbox"]:checked + &_unchecked-icon{
+      display: none;
+  }
+      */
+}
+.agree-checkbox_input[type=checkbox] {
+  display: none;
+  max-width: 16px;
+  max-height: 16px;
+}
+.agree-checkbox_svg-span {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+.agree-checkbox_svg-span::before, .agree-checkbox_svg-span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+.agree-checkbox_svg-span::before {
+  background-image: url("../../images/icons.svg#unchecked-icon");
+}
+.agree-checkbox_svg-span::after {
+  background-image: url("../../images/icons.svg#checked-icon");
+  display: none;
+}
+.agree-checkbox_input:checked + .agree-checkbox_svg-span::before {
+  display: none;
+}
+.agree-checkbox_input:checked + .agree-checkbox_svg-span::after {
+  display: block;
+  background-color: #2196f3;
 }
 
 .footer {
@@ -355,4 +437,113 @@ h1 {
 .clients-section_svg {
   max-width: 106px;
   max-height: 60px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+.modal_content {
+  background-color: #ffffff;
+  width: 528px;
+  display: flex;
+  padding: 40px;
+  position: absolute;
+  box-shadow: 0 2px 1px rgba(33, 33, 33, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.modal_close-button {
+  border-style: solid;
+  position: absolute;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  top: 8px;
+  right: 8px;
+  padding: 9px;
+  max-height: 30px;
+  max-width: 30px;
+  background-color: var(--white-text);
+  color: #000000;
+}
+.modal_close-button svg {
+  display: block;
+  height: 11px;
+  width: 11px;
+}
+
+.user-input-form {
+  width: 100%;
+  align-items: center;
+}
+.user-input-form_title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.user-input-form_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-input-form_list {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.user-input-form_item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.user-input-form_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.user-input-form_label {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.user-input-form_input-container {
+  position: relative;
+}
+.user-input-form_input-container:focus-within {
+  color: #2196f3;
+}
+.user-input-form_input, .user-input-form_textarea {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  outline: none;
+  padding: 12px 42px;
+  max-height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.3);
+  border-style: solid;
+}
+.user-input-form_input:focus, .user-input-form_textarea:focus {
+  border-color: #2196f3;
+}
+.user-input-form_textarea {
+  padding: 12px 16px;
+  max-height: none;
+  resize: none;
+}
+.user-input-form_svg {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  max-width: 18px;
+  max-height: 18px;
+}
+.user-input-form_button {
+  padding-left: 52px;
+  padding-right: 52px;
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */

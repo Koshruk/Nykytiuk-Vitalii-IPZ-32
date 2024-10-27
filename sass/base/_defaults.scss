@@ -9,7 +9,7 @@ img{
   
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--main-text-color);
+    color: $light-black-color;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -162,3 +162,14 @@ body {
       display: none;
     }
   }
+
+
+  .is-hidden{
+    display: none; 
+  }
+
+  .is-visible{
+    display: flex;
+  }
+
+
