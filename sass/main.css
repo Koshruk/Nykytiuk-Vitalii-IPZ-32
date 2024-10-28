@@ -294,6 +294,7 @@ h1 {
 .contacts-list_item {
   display: flex;
   align-items: center;
+  color: #757575;
 }
 .contacts-list_link {
   display: flex;
@@ -319,6 +320,7 @@ h1 {
      -moz-user-select: none;
           user-select: none;
   position: relative;
+  color: #757575;
   /*
 
   &_checked-icon, &_unchecked-icon{
@@ -385,6 +387,11 @@ h1 {
 .agree-checkbox_input:checked + .agree-checkbox_svg-span::after {
   display: block;
   background-color: #2196f3;
+}
+.agree-checkbox_link {
+  color: #2196f3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footer {
@@ -644,7 +651,7 @@ h1 {
   align-items: center;
 }
 .user-input-form_list {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .user-input-form_item {

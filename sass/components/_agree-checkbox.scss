@@ -1,8 +1,8 @@
 .agree-checkbox{
     line-height: 1.71;
-
     user-select: none;
     position: relative;
+    color: $pale-color;
 
     &_input[type="checkbox"]{
         display: none;
@@ -25,31 +25,36 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-size: cover; // Ensure the SVGs cover the span
+            background-size: cover;
             background-repeat: no-repeat;
-            display: block; // Ensure it shows by default
+            display: block; 
         }
 
         &::before {
-            background-image: url('../../images/icons.svg#unchecked-icon'); // Adjust path as necessary
+            background-image: url('../../images/icons.svg#unchecked-icon'); 
         }
 
-        // Initially hide the checked icon
         &::after {
-            background-image: url('../../images/icons.svg#checked-icon'); // Adjust path as necessary
-            display: none; // Initially hidden
+            background-image: url('../../images/icons.svg#checked-icon'); 
+            display: none; 
         }
     }
 
     &_input:checked + &_svg-span {
         &::before {
-            display: none; // Hide unchecked icon when checked
+            display: none;
         }
 
         &::after {
             display: block;
-            background-color: $active-color; // Show checked icon when checked
+            background-color: $active-color;
         }
+    }
+
+    &_link{
+        color: $active-color;
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
     /*
