@@ -303,6 +303,8 @@ h1 {
   margin-right: 10px;
   height: 16px;
   width: 16px;
+  position: relative;
+  bottom: 1px;
 }
 
 .logo {
@@ -358,35 +360,33 @@ h1 {
 }
 .agree-checkbox_svg-span {
   position: relative;
+  top: 3px;
   display: inline-block;
   width: 16px;
-  height: 15px;
+  height: 16px;
   margin-right: 8px;
-}
-.agree-checkbox_svg-span::before, .agree-checkbox_svg-span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
+  border: 1px solid #000000;
+  border-radius: 2px;
 }
 .agree-checkbox_svg-span::before {
-  background-image: url("../../images/icons.svg#unchecked-icon");
-}
-.agree-checkbox_svg-span::after {
-  background-image: url("../../images/icons.svg#checked-icon");
+  content: "";
   display: none;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.agree-checkbox_input:checked + .agree-checkbox_svg-span {
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 2px;
 }
 .agree-checkbox_input:checked + .agree-checkbox_svg-span::before {
-  display: none;
-}
-.agree-checkbox_input:checked + .agree-checkbox_svg-span::after {
   display: block;
-  background-color: #2196f3;
 }
 .agree-checkbox_link {
   color: #2196f3;
@@ -406,6 +406,7 @@ h1 {
 .footer_title {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-size: 14px;
 }
 .footer_links-section {
   margin-left: 100px;
@@ -440,7 +441,7 @@ h1 {
 }
 
 .hero {
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/title_section_photo.jpg");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/title_section_photo.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 1600px;
