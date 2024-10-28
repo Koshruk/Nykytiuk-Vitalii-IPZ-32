@@ -1,0 +1,29 @@
+.employees-section{
+    padding-top: 94px;
+    background-color: $light-background-color;
+
+    &_figure{
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
+    }
+
+    &_figcaption{
+        padding: 30px;
+    }
+
+    &_figure-title{
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &_figure-text{
+        font-size: 16px;
+        color: $pale-color;
+    }
+
+    &_links-list{
+        margin-top: 16px;
+    }
+}

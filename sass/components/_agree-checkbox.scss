@@ -1,0 +1,82 @@
+.agree-checkbox{
+    line-height: 1.71;
+    user-select: none;
+    position: relative;
+    color: $pale-color;
+
+
+    &_input[type="checkbox"]{
+        display: none;
+        max-width: 16px;
+        max-height: 16px;
+    }
+
+    &_svg-span{
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        border: 1px solid $black;
+        border-radius: 2px;
+
+        &::before {
+            content: '';
+            display: none;
+            position: absolute;
+            top: 1px;
+            left: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &_input:checked + &_svg-span {
+        background-color: $active-color;
+        border: 1px solid $active-color;
+        border-radius: 2px;
+        &::before {
+            display: block;
+        }
+    }
+
+    &_link{
+        color: $active-color;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    /*
+
+    &_checked-icon, &_unchecked-icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 15px;
+        max-height: 16px;
+    }
+
+    &_checked-icon{
+        display: none;
+    }
+
+    &_unchecked-icon{
+        display: block;
+    }
+
+    &_input[type="checkbox"]:checked + &_checked-icon{
+        display: block;
+        background-color: $active-color;
+        border-radius: 2px;
+    }
+    &_input[type="checkbox"]:checked + &_unchecked-icon{
+        display: none;
+    }
+        */
+}  

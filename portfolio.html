@@ -15,74 +15,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./sass/main.css" />
   </head>
-  <body class="portfolio">
-    <header>
-      <div class="container">
-        <a class="logo-link" href="index.html"><span>Web</span>Studio</a>
-        <nav class="nav-list">
-          <ul>
-            <li class="main-page-navigation">
-              <a href="index.html">Студія</a>
+  <body class="portfolio-page">
+    <header class="header"> <!--block-->
+      <div class="container"> <!--block-->
+        <a class="logo" href="index.html"><span class="logo_web-span">Web</span>Studio</a> <!--block-->
+        <nav class="header_nav"> <!--block-->
+          <ul class="header_nav-list"> <!--element-->
+            <li class="header_nav-item"> <!--element-->
+              <a class="header_nav-link" href="index.html">Студія</a> <!--element-->
             </li>
-            <li class="portfolio-page-navigation">
-              <a href="portfolio.html">Портфоліо</a>
+            <li class="header_nav-item"> <!--element-->
+              <a class="header_nav-link header_nav-link--on-page" href="portfolio.html">Портфоліо</a> <!--element-->
             </li>
-            <li class="contacts-page-navigation">
-              <a href="">Контакти</a>
+            <li class="header_nav-item"> <!--element-->
+              <a class="header_nav-link" href="">Контакти</a> <!--element-->
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-link">
-            <svg>
+        <ul class="contacts-list"> <!--block-->
+          <li class="contacts-list_item"> <!--element-->
+            <svg class="contacts-list_svg"> <!--element-->
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="info@devstudio.com"> info@devstudio.com </a>
+            <a class="contacts-list_link" href="info@devstudio.com"> info@devstudio.com </a> <!--element-->
           </li>
-          <li class="header-number">
-            <svg>
+          <li class="contacts-list_item"> <!--element-->
+            <svg class="contacts-list_svg"> <!--element-->
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+380951111111"> +38 096 111 11 11 </a>
+            <a class="contacts-list_link" href="tel:+380951111111"> +38 096 111 11 11 </a> <!--element-->
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="main-section">
+      <section class="portfolio-section">
         <div class="container">
-          <ul class="buttons_portfolio">
-            <li>
-              <button type="button">Усі</button>
+          <nav class="portfolio-section_navigation">
+            <ul class="portfolio-section_nav-list">
+            <li class="portfolio-section_nav-item">
+              <button class="portfolio-section_nav-button" type="button">Усі</button>
             </li>
-            <li>
-              <button type="button">Веб-сайти</button>
+            <li class="portfolio-section_nav-item">
+              <button class="portfolio-section_nav-button" type="button">Веб-сайти</button>
             </li>
-            <li>
-              <button type="button">Додатки</button>
+            <li class="portfolio-section_nav-item">
+              <button class="portfolio-section_nav-button" type="button">Додатки</button>
             </li>
-            <li>
-              <button type="button">Дизайн</button>
+            <li class="portfolio-section_nav-item">
+              <button class="portfolio-section_nav-button" type="button">Дизайн</button>
             </li>
-            <li>
-              <button type="button">Маркетинг</button>
+            <li class="portfolio-section_nav-item">
+              <button class="portfolio-section_nav-button" type="button">Маркетинг</button>
             </li>
-          </ul>
-          <ul class="figures-portfolio">
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            </ul>
+          </nav>
+          <ul class="portfolio-section_list">
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/techno.jpg"
                     alt="Ноутбук з відкритим вебсайтом де відерита сторінка з працівниками компанії"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -90,193 +92,193 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Технокряк</h2>
-                  <p>Веб-сайт</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Технокряк</h2>
+                  <p class="figure_text">Веб-сайт</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/new_orlean.jpg"
                     alt="Двоє баскетболістів борються за м'яч"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p>Дизайн</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Постер New Orlean vs Golden Star</h2>
+                  <p class="figure_text">Дизайн</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/seafood.jpg"
                     alt="Логотоип ресторану Seafood"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Ресторан Seafood</h2>
-                  <p>Додаток</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Ресторан Seafood</h2>
+                  <p class="figure_text">Додаток</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/prime.jpg"
                     alt="Повнорозмірні навушники"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Проєкт Prime</h2>
-                  <p>Маркетинг</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Проєкт Prime</h2>
+                  <p class="figure_text">Маркетинг</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/boxes.jpg"
                     alt="Дві коробки для упакування брендової продукції"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Проєкт Boxes</h2>
-                  <p>Додаток</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Проєкт Boxes</h2>
+                  <p class="figure_text">Додаток</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/inspiration.jpg"
                     alt="Моноблок з відкритим сайтом де видно карту світу"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Inspiration has no Borders</h2>
-                  <p>Веб-сайт</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Inspiration has no Borders</h2>
+                  <p class="figure_text">Веб-сайт</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/limited_edition.jpg"
                     alt="Відкрита книга з заголовком 'I am Limited Edition'"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Видання Limited Edition</h2>
-                  <p>Дизайн</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Видання Limited Edition</h2>
+                  <p class="figure_text">Дизайн</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/lab.jpg"
                     alt="Лейбл з написом 'Label Tag'"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Проєкт LAB</h2>
-                  <p>Маркетинг</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Проєкт LAB</h2>
+                  <p class="figure_text">Маркетинг</p>
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <div class="image-wrapper">
-                  <img
+            <li class="portfolio-section_item">
+              <figure class="figure portfolio-section_figure">
+                <div class="figure_image-wrapper">
+                  <img class="figure_image"
                     src="./images/business.jpg"
                     alt="Людина працює за ноутбуком де відкритий вебсайт з заголовком 'Growing Business'"
                     width="370"
                     height="294"
                   />
-                  <div class="figure-overlay">
-                    <p>
+                  <div class="figure_overlay">
+                    <p class="figure_overlay-text">
                       Lorem ipsum odor amet, consectetuer adipiscing elit.
                       Torquent ut ante tristique euismod nisl. Neque efficitur
                       facilisi maximus himenaeos blandit libero euismod?
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h2>Growing Business</h2>
-                  <p>Додаток</p>
+                <figcaption class="figure_caption">
+                  <h2 class="figure_title">Growing Business</h2>
+                  <p class="figure_text">Додаток</p>
                 </figcaption>
               </figure>
             </li>
@@ -284,63 +286,66 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div>
-          <a class="logo-link" href="index.html"><span>Web</span>Studio</a>
-          <address>
-            <p>м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+380951111111">0951111111</a>
+        <div class="footer_info-section">
+          <a class="logo" href="index.html"><span>Web</span>Studio</a>
+          <address class="address footer_address">
+            <p class="address_location">м. Київ, пр-т Лесі Українки, 26</p>
+            <a class="address_link address_email" href="info@devstudio.com">info@devstudio.com</a>
+            <a class="address_link address_number" href="tel:+380951111111">0951111111</a>
           </address>
         </div>
-        <div class="footer-button-links">
-          <h3>Приєднуйтесь</h3>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com">
-                <svg>
+        <div class="footer_links-section">
+          <h3 class="footer_title">Приєднуйтесь</h3>
+          <ul class="links-list links-list footer_links-list">
+            <li class="links-list_item">
+              <a class="links-list_link links-list_link--on-black" href="https://www.instagram.com">
+                <svg class="links-list_svg">  
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com">
-                <svg>
+            <li class="links-list_item">
+              <a class="links-list_link links-list_link--on-black" href="https://twitter.com">
+                <svg class="links-list_svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="https://www.facebook.com">
-                <svg>
+            <li class="links-list_item">
+              <a class="links-list_link links-list_link--on-black" href="https://www.facebook.com">
+                <svg class="links-list_svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/">
-                <svg>
+            <li class="links-list_item">
+              <a class="links-list_link links-list_link--on-black" href="https://www.linkedin.com/">
+                <svg class="links-list_svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class = "footer-email-field">
-          <h3>Підпишіться на розсилку</h3>
-          <div class="form-row">
-          <form class = "mailing-form" name = "mailing_form" novalidate>
-            <label for = "footer-email">E-mail</label>
-            <input type="email" name="email" id = "footer-email">
+        <div class="footer_field-section">
+          <h3 class="footer_title">Підпишіться на розсилку</h3>
+          <form class="form footer_form" name="mailing_form"> <!--block-->
+            <label class="form_label form_label--hidden" for="form_label">E-mail</label>
+              <input class="form_input footer_input"
+                type="email"
+                name="email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button button--svg-right form_button footer_button">
+                Підписатися
+                <svg class="button_svg">
+                  <use href="./images/icons.svg#send-icon"></use>
+                </svg>
+              </button>
           </form>
-          <button type="submit" class="send-button">
-            Підписатися
-            <svg class="send-email-svg">
-              <use href = "./images/icons.svg#send-icon"></use>
-            </svg>
-          </button>
-          </div>
         </div>
       </div>
     </footer>

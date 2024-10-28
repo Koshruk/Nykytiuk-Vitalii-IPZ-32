@@ -1,0 +1,22 @@
+.pictures-section{
+    &_item{
+        position: relative;
+    }
+
+    &_overlay{
+        color: $white;
+
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(0deg, $background-filter80-color, $background-filter80-color);
+        padding: 26px;
+    }
+
+    &_overlay-text{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+

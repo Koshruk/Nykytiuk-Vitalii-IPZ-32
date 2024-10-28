@@ -1,0 +1,243 @@
+p, h1, h2, h3, a, ul, li, figure, body, img, button{
+    margin: 0;
+    padding: 0px;
+  }
+  
+img{
+    display: block;
+}
+  
+body {
+    font-family: "Roboto", sans-serif;
+    color: $light-black-color;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+
+  .container{
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    list-style-position: inside;
+  }
+  
+  button {
+    color: var(--white-text);
+    appearance: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    &:hover{
+        color: $active-color;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $white;
+    background-color: $active-color;
+    box-shadow: 0 4px 4px $button-shadow;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover{
+      background-color: $active-darkened-color;
+    }
+
+    &--svg-right{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &_svg{
+      max-height: 24px;
+      max-width: 24px;
+    }
+  }
+
+  .list-section{
+    padding-bottom: 94px;
+
+    text-align: center;
+
+    &_list{
+      display: flex;
+      justify-content:space-between;
+    }
+
+    &_title{
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .links-list{
+    max-height: 44px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    &_item{
+      display: flex;
+      max-width: 44px;
+
+    }
+
+    &_link{
+      padding: 12px;
+      border-radius: 50%;
+
+      &:hover{
+        background-color: $active-color;
+        color: $white;
+      }
+
+      &--on-white{
+        background-color: $white;
+        color: $pale-icon-color;
+      }
+
+      &--on-black{
+        background-color: $opaque10-white;
+      }
+    }
+
+    &_svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .address{
+    line-height: 1.14;
+    letter-spacing: 0.033em;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    &_link{
+      color: $opaque60-white;
+      margin-top: 12px;
+    }
+  }
+
+  .form{
+    &_label{
+      display: none;
+    }
+  }
+
+
+  .is-hidden{
+    display: none; 
+  }
+
+  .is-visible{
+    display: flex;
+    animation: show-overlay 200ms;
+
+    &_content{
+      animation: show 200ms;
+    }
+  }
+
+.close{
+  animation: hide-overlay 200ms;
+  .close-content{
+    animation: hide 200ms;
+  }
+}
+
+.figure{
+  border: 1px solid $figure-border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &_caption{
+    padding: 20px 24px 20px;
+  }
+
+  &_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  &_text{
+    font-size: 16px;
+    line-height: 1.88;
+    color: $pale-color;
+  }
+
+  &:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    .figure_overlay{
+      transform: translateY(0);
+    }
+  }
+
+  &_image-wrapper{
+    position: relative;
+      width:max-content;
+      overflow: hidden;
+  }
+
+  &_overlay{
+    background-image: linear-gradient(0deg, $active-overlay-color, $active-overlay-color);
+  color: $white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  right: 0px;
+  left: 0px;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform linear 250ms;
+  }
+
+  &_overlay-text{
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

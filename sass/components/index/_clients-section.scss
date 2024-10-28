@@ -1,0 +1,27 @@
+.clients-section{
+    padding-top: 94px;
+
+    &_link{
+        display: flex;
+
+        max-width: 170px;
+
+        padding: 16px 32px;
+        border-width: 1px;
+        border-radius: 5px; 
+
+        color: $pale-icon-color;
+        border-color: $pale-icon-color;
+        background-color: $white;
+        border-style: solid;
+
+        &:hover{
+            border-color: $active-color;
+        }
+    }
+
+    &_svg{
+        max-width: 106px;
+        max-height: 60px;
+    }
+}
