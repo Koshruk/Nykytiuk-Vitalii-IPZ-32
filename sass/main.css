@@ -252,7 +252,7 @@ h1 {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-color-header);
+  border-bottom: 1px solid #ececec;
 }
 .header .container {
   display: flex;
@@ -271,6 +271,20 @@ h1 {
 }
 .header_nav-item:not(:last-child) {
   margin-right: 30px;
+}
+.header_nav-link--on-page {
+  position: relative;
+}
+.header_nav-link--on-page::after {
+  height: 4px;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 }
 
 .contacts-list {

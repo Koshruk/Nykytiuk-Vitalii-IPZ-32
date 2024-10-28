@@ -1,5 +1,5 @@
 .header{
-    border-bottom: 1px solid var(--border-color-header);
+    border-bottom: 1px solid $header-border-color;
     .container{
         display: flex;
         align-items: center;
@@ -20,6 +20,24 @@
     &_nav-item:not(:last-child){
         margin-right: 30px;
     }
+
+    &_nav-link{
+        &--on-page{
+        position: relative;
+            &::after{
+                height: 4px;
+                width: 100%;
+                background-color: $active-color;
+                border-radius: 2px;
+                content: '';
+                display: flex;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+            }
+        }
+    }
+        
   }
   
     
