@@ -574,6 +574,7 @@ h1 {
   display: flex;
   padding: 40px;
   position: absolute;
+  border-radius: 4px;
   box-shadow: 0 2px 1px rgba(33, 33, 33, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .modal_close-button {
