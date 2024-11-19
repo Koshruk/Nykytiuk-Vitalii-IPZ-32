@@ -1,10 +1,31 @@
 .clients-section{
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_title{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &_list{
+        display: flex;
+        gap: 30px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &_item{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+    }
 
     &_link{
         display: flex;
 
-        max-width: 170px;
 
         padding: 16px 32px;
         border-width: 1px;
@@ -23,5 +44,17 @@
     &_svg{
         max-width: 106px;
         max-height: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+        &_item{
+            flex-basis: 30%;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        &_list{
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
     }
 }

@@ -50,7 +50,7 @@ body {
 
   h1 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
@@ -89,7 +89,7 @@ body {
       max-width: 24px;
     }
   }
-
+/*
   .list-section{
     padding-bottom: 94px;
 
@@ -106,7 +106,7 @@ body {
       margin-bottom: 50px;
     }
   }
-
+*/
   .links-list{
     max-height: 44px;
     display: flex;
@@ -239,5 +239,13 @@ body {
   &_overlay-text{
     font-size: 18px;
     line-height: 1.56;
+  }
+
+
+}
+
+@media screen and (min-width:769px){
+  h1{
+    font-size: 44px;
   }
 }
