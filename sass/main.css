@@ -294,7 +294,7 @@ h1 {
   display: flex;
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
 }
 .header_contacts-list {
   display: none;
@@ -502,19 +502,24 @@ h1 {
   .footer_upper-div {
     flex-direction: row;
     margin-bottom: 0;
+    gap: 70px;
+    align-items: baseline;
   }
   .footer_container {
     flex-direction: row;
     align-items: baseline;
+    text-align: left;
   }
   .footer_form {
     display: flex;
+    gap: 12px;
+    align-items: baseline;
   }
   .footer_input {
     margin-bottom: 0;
   }
   .footer_field-section {
-    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -635,6 +640,7 @@ h1 {
 .pictures-section_overlay-text {
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .pictures-section {
@@ -695,7 +701,7 @@ h1 {
   }
   .employees-section_item {
     flex-basis: 40%;
-    max-width: 350px;
+    max-width: 370px;
     text-align: left;
   }
 }
@@ -734,10 +740,13 @@ h1 {
   flex-basis: 40%;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 .clients-section_link {
   display: flex;
-  padding: 16px 32px;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
   border-width: 1px;
   border-radius: 5px;
   color: #afb1b8;
@@ -814,6 +823,14 @@ h1 {
 .burger_container {
   position: relative;
   margin: 0;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.burger_nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .burger_nav-link {
   font-size: 40px;
@@ -822,7 +839,14 @@ h1 {
   display: flex;
 }
 .burger_links-item {
-  padding: 0 3px;
+  padding: 0 6px;
+}
+.burger_contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .burger_number {
   font-size: 34px;
@@ -843,6 +867,9 @@ h1 {
   height: fit-content;
   border: none;
   background-color: inherit;
+}
+.burger_close-button:hover {
+  color: #2196f3;
 }
 .burger_close-svg {
   top: 30px;

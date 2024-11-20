@@ -21,13 +21,14 @@
         flex-basis: 40%;
         display: flex;
         justify-content: center;
+        flex-grow: 1;
     }
 
     &_link{
         display: flex;
-
-
-        padding: 16px 32px;
+        justify-content: center;
+        width: 100%;
+        padding: 16px 0;
         border-width: 1px;
         border-radius: 5px; 
 
@@ -45,6 +46,7 @@
         max-width: 106px;
         max-height: 60px;
     }
+    
 
     @media screen and (min-width:768px) {
         &_item{

@@ -8,8 +8,16 @@
     &_container{
         position: relative;
         margin: 0;
+        padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
     }
 
+    &_nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 
     &_nav-link{
         font-size: 40px;
@@ -19,7 +27,15 @@
     }
 
     &_links-item{
-        padding: 0 3px;
+        padding: 0 6px;
+    }
+
+    &_contacts{
+        margin-top: auto;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap:32px;
     }
 
     &_number{
@@ -44,6 +60,9 @@
         height: fit-content;
         border:none;
         background-color: inherit;
+    }
+    &_close-button:hover{
+        color: $active-color;
     }
 
     &_close-svg{
