@@ -1,0 +1,57 @@
+.burger{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    &_container{
+        position: relative;
+        margin: 0;
+    }
+
+    &_nav{
+        margin-bottom: auto;
+    }
+
+    &_nav-link{
+        font-size: 40px;
+    }
+    &_links-list{
+        display: flex;
+    }
+
+    &_links-item{
+        padding: 0 3px;
+    }
+
+    &_number{
+        font-size: 34px;
+        color: $active-color;
+    }
+
+    &_email{
+        font-size: 24px;
+    }
+
+    &_link{
+        font-size: 18px;
+        color: $active-color;
+    }
+
+    &_links-item:not(:last-child){
+        border-right: solid 1px rgba($light-black-color, 0.2);
+    }
+
+    &_close-button{
+        height: fit-content;
+    }
+
+    &_close-svg{
+        top: 30px;
+        right: 30px;
+        position: absolute;
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
