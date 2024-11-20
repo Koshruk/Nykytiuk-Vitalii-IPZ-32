@@ -10,9 +10,6 @@
         margin: 0;
     }
 
-    &_nav{
-        margin-bottom: auto;
-    }
 
     &_nav-link{
         font-size: 40px;
@@ -45,6 +42,8 @@
 
     &_close-button{
         height: fit-content;
+        border:none;
+        background-color: inherit;
     }
 
     &_close-svg{

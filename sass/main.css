@@ -301,6 +301,8 @@ h1 {
 }
 .header_burger-button {
   margin-left: auto;
+  border: none;
+  background-color: inherit;
 }
 .header_burger-svg {
   max-height: 40px;
@@ -813,9 +815,6 @@ h1 {
   position: relative;
   margin: 0;
 }
-.burger_nav {
-  margin-bottom: auto;
-}
 .burger_nav-link {
   font-size: 40px;
 }
@@ -842,6 +841,8 @@ h1 {
 .burger_close-button {
   height: -moz-fit-content;
   height: fit-content;
+  border: none;
+  background-color: inherit;
 }
 .burger_close-svg {
   top: 30px;
