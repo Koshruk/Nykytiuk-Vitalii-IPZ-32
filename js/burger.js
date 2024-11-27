@@ -11,15 +11,15 @@
   
     function openBurger() {
       refs.burger.classList.remove("is-hidden");
-      refs.burger.classList.add("is-visible");
+      refs.burger.classList.add("is-visible-burger");
     }
 
     function closeBurger(){
-      refs.burger.classList.add("close");
+      refs.burger.classList.add("close-burger");
       setTimeout(() => {
-        refs.burger.classList.remove("close");
+        refs.burger.classList.remove("close-burger");
         refs.burger.classList.add("is-hidden");
-        refs.burger.classList.remove("is-visible");
+        refs.burger.classList.remove("is-visible-burger");
       }, 190);
     }
   })();

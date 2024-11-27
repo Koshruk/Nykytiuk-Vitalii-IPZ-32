@@ -73,3 +73,17 @@
         max-height: 20px;
     }
 }
+
+
+  .is-hidden{
+    display: none; 
+  }
+
+  .is-visible-burger{
+    display: flex;
+    animation: show-burger 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .close-burger{
+    animation: hide-burger 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }

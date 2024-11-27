@@ -177,17 +177,30 @@ body {
     }
   }
 
-.close{
-  animation: hide-overlay 200ms;
-  .close-content{
-    animation: hide 200ms;
+  .close{
+    animation: hide-overlay 200ms;
+    .close-content{
+      animation: hide 200ms;
+    }
   }
-}
 
 .figure{
+  width: 100%;
+  height: auto;
   border: 1px solid $figure-border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+
+  &_image-wrapper{
+    position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  &_image{
+    width: 100%;
+    height: auto;
+  }
 
   &_caption{
     padding: 20px 24px 20px;
@@ -213,12 +226,6 @@ body {
     .figure_overlay{
       transform: translateY(0);
     }
-  }
-
-  &_image-wrapper{
-    position: relative;
-      width:max-content;
-      overflow: hidden;
   }
 
   &_overlay{

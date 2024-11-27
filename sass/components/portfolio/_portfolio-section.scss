@@ -10,7 +10,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        justify-content: center;
+        justify-content: left;
+
     }
 
     &_nav-button{
@@ -41,8 +42,26 @@
     }
 
     &_item{
-        max-width: 370px;
+        width: 100%;
+        max-width: 450px;
+        flex: 1;
+
+        flex-basis: auto;
     }
 
-    
+    @media screen and (min-width:768px) {
+        &_nav-list{
+            justify-content: center;
+        }
+
+        &_item{
+            flex-basis: 48%;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &_item{
+            flex-basis: 30%;
+        }
+    }
 }
