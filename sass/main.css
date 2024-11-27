@@ -807,7 +807,7 @@ h1 {
 }
 .modal_content {
   background-color: #ffffff;
-  width: 425px;
+  width: 350px;
   display: flex;
   padding: 40px;
   position: absolute;
@@ -832,6 +832,11 @@ h1 {
   display: block;
   height: 11px;
   width: 11px;
+}
+@media screen and (min-width: 480px) {
+  .modal_content {
+    width: 425px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal_content {
