@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Послуги створення веб-сайтів" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +21,7 @@
   <body class="main-page"> 
     <header class="header"> 
       <div class="container"> 
-        <a class="logo" href="index.html"><span class="logo_web-span">Web</span>Studio</a> 
+        <a class="logo header_logo" href="index.html"><span class="logo_web-span">Web</span>Studio</a> 
         <nav class="header_nav"> 
           <ul class="header_nav-list"> 
             <li class="header_nav-item"> 
@@ -34,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list"> 
+        <ul class="contacts-list header_contacts-list"> 
           <li class="contacts-list_item"> 
             <a class="contacts-list_link" href="info@devstudio.com"> 
               <svg class="contacts-list_svg"> 
@@ -51,6 +52,11 @@
                +38 096 111 11 11 </a>
           </li>
         </ul>
+        <button class="header_burger-button" burger-open>
+          <svg class="header_burger-svg">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -61,12 +67,12 @@
           <button class="button hero_button" type="button" data-modal-open>Замовити послугу</button> <!--block-->
         </div>
       </section>
-      <section class="list-section info-section"> <!--block-->
-        <div class="container"> <!--block-->
-          <h2 class="list-section_title info-section_title">Наші особливості</h2> 
+      <section class="info-section"> <!--block-->
+        <div class="container info-section_container"> <!--block-->
+          <h2 class="info-section_title">Наші особливості</h2> 
           <!--Прихований заголовок-->
-          <ul class="list-section_list info-section_list">
-            <li class="list-section_item info-section_item">
+          <ul class="info-section_list">
+            <li class="info-section_item">
               <div class="info-section_svg-container">
                 <svg class="info-section_svg">
                   <use  href="./images/icons.svg#icon-antenna-1"></use>
@@ -79,7 +85,7 @@
               </p>
             </li>
 
-            <li class="list-section_item info-section_item">
+            <li class="info-section_item">
               <div class="info-section_svg-container">
                 <svg class="info-section_svg">
                   <use href="./images/icons.svg#icon-clock-1"></use>
@@ -92,7 +98,7 @@
               </p>
             </li>
 
-            <li class="list-section_item info-section_item">
+            <li class="info-section_item">
               <div class="info-section_svg-container">
                 <svg class="info-section_svg">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -104,7 +110,7 @@
               </p>
             </li>
 
-            <li class="list-section_item info-section_item">
+            <li class="info-section_item">
               <div class="info-section_svg-container">
                 <svg class="info-section_svg">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -120,11 +126,11 @@
         </div>
       </section>
 
-      <section class="list-section pictures-section">
-        <div class="container">
-          <h2 class="list-section_title">Чим ми займаємося</h2>
-          <ul class="list-section_list pictures-list">
-            <li class="list-section_item pictures-section_item">
+      <section class="pictures-section">
+        <div class="container pictures-section_container">
+          <h2 class="pictures-section_title">Чим ми займаємося</h2>
+          <ul class="pictures-section_list">
+            <li class="pictures-section_item">
               <img class="pictures_section_image"
                 src="./images/img_dev.jpg"
                 alt="розробник пише код за робочим місцем"
@@ -135,7 +141,7 @@
                 <p class="pictures-section_overlay-text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="list-section_item pictures-section_item">
+            <li class="pictures-section_item">
               <img class="pictures_section_image"
                 src="./images/img_design.jpg"
                 alt="веб дизайнер створює дизайн для мобільної веб сторінки"
@@ -146,7 +152,7 @@
                 <p class="pictures-section_overlay-text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="list-section_item pictures-section_item">
+            <li class="pictures-section_item">
               <img class="pictures_section_image"
                 src="./images/img_art.jpg"
                 alt="художник обирає кольорову гамму під час створення дизайну веб сторінки"
@@ -161,17 +167,15 @@
         </div>
       </section>
 
-      <section class="list-section employees-section">
-        <div class="container">
-          <h2 class="list-section_title">Наша команда</h2>
-          <ul class="list-section_list employees-figures_list">
+      <section class="employees-section">
+        <div class="container container_employees-section">
+          <h2 class="employees-section_title">Наша команда</h2>
+          <ul class="employees-section_list">
             <li class="employees-section_item">
               <figure class="employees-section_figure">
                 <img class="employees-section_image"
                   src="./images/Ihor_Demyanenko.jpg"
                   alt="Ігор Дем'яненко"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="employees-section_figcaption">
                   <h3 class="employees-section_figure-title">Ігор Дем'яненко</h3>
@@ -214,8 +218,6 @@
                 <img class="employees-section_image"
                   src="./images/Olha_Ryepina.jpg"
                   alt="Ольга рєпіна"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="employees-section_figcaption">
                   <h3 class="employees-section_figure-title">Ольга Рєпіна</h3>
@@ -258,8 +260,6 @@
                 <img class="employees-section_image"
                   src="./images/Mykola_Tarasov.jpg"
                   alt="Микола Тарасов"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="employees-section_figcaption">
                   <h3 class="employees-section_figure-title">Микола Тарасов</h3>
@@ -302,8 +302,6 @@
                 <img class="employees-section_image"
                   src="./images/Mykhailo_Yermakov.jpg"
                   alt="Михайло Єрмаков"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="employees-section_figcaption">
                   <h3 class="employees-section_figure-title">Михайло Єрмаков</h3>
@@ -345,46 +343,46 @@
         </div>
       </section>
 
-      <section class="list-section clients-section">
-        <div class="container">
-          <h2 class="list-section_title">Постійні клієнти</h2>
-          <ul class="list-section_list">
-            <li class="list-section_item clients-section_item">
+      <section class="clients-section">
+        <div class="container clients-section_container">
+          <h2 class="clients-section_title">Постійні клієнти</h2>
+          <ul class="clients-section_list">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-section_item clients-section_item">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-section_item clients-section_item">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-section_item clients-section_item">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-section_item clients-section_item">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="list-section_item clients-section_item">
+            <li class="clients-section_item">
               <a class="clients-section_link" href="">
                 <svg class="clients-section_svg">
                   <use href="./images/icons.svg#icon-Logo5"></use>
@@ -397,47 +395,49 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer_info-section">
-          <a class="logo" href="index.html"><span>Web</span>Studio</a>
-          <address class="address footer_address">
-            <p class="address_location">м. Київ, пр-т Лесі Українки, 26</p>
-            <a class="address_link address_email" href="info@devstudio.com">info@devstudio.com</a>
-            <a class="address_link address_number" href="tel:+380951111111">0951111111</a>
-          </address>
-        </div>
-        <div class="footer_links-section">
-          <h3 class="footer_title">Приєднуйтесь</h3>
-          <ul class="links-list links-list footer_links-list">
-            <li class="links-list_item">
-              <a class="links-list_link links-list_link--on-black" href="https://www.instagram.com">
-                <svg class="links-list_svg">  
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="links-list_item">
-              <a class="links-list_link links-list_link--on-black" href="https://twitter.com">
-                <svg class="links-list_svg">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="links-list_item">
-              <a class="links-list_link links-list_link--on-black" href="https://www.facebook.com">
-                <svg class="links-list_svg">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="links-list_item">
-              <a class="links-list_link links-list_link--on-black" href="https://www.linkedin.com/">
-                <svg class="links-list_svg">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <div class="container footer_container">
+        <div class="footer_upper-div">
+          <div class="footer_info-section">
+            <a class="logo" href="index.html"><span>Web</span>Studio</a>
+            <address class="address footer_address">
+              <p class="address_location">м. Київ, пр-т Лесі Українки, 26</p>
+              <a class="address_link address_email" href="info@devstudio.com">info@devstudio.com</a>
+              <a class="address_link address_number" href="tel:+380951111111">0951111111</a>
+            </address>
+          </div>
+          <div class="footer_links-section">
+            <h3 class="footer_title">Приєднуйтесь</h3>
+            <ul class="links-list links-list footer_links-list">
+              <li class="links-list_item">
+                <a class="links-list_link links-list_link--on-black" href="https://www.instagram.com">
+                  <svg class="links-list_svg">  
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list_item">
+                <a class="links-list_link links-list_link--on-black" href="https://twitter.com">
+                  <svg class="links-list_svg">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list_item">
+                <a class="links-list_link links-list_link--on-black" href="https://www.facebook.com">
+                  <svg class="links-list_svg">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="links-list_item">
+                <a class="links-list_link links-list_link--on-black" href="https://www.linkedin.com/">
+                  <svg class="links-list_svg">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer_field-section">
           <h3 class="footer_title">Підпишіться на розсилку</h3>
@@ -524,7 +524,49 @@
         </div>
       </div>
     </div>
+
+    <div class="burger is-hidden" burger>
+      <div class="container burger_container">
+        <nav class="burger_nav">
+          <ul class="burger_nav-list">
+            <li class="burger_nav-item"> 
+              <a class="burger_nav-link" href="index.html">Студія</a> 
+            </li>
+            <li class="burger_nav-item"> 
+              <a class="burger_nav-link" href="portfolio.html">Портфоліо</a> 
+            </li>
+            <li class="burger_nav-item"> 
+              <a class="burger_nav-link" href="">Контакти</a> 
+            </li>
+          </ul>
+        </nav>
+        <div class="burger_contacts">
+          <a class="burger_number">+38 096 111 11 11</a>
+          <a class="burger_email">info@devstudio.com</a>
+        </div>
+        <ul class="burger_links-list">
+          <li class="burger_links-item">
+            <a class="burger_link">Instagram</a>
+          </li>
+          <li class="burger_links-item">
+            <a class="burger_link">Twitter</a>
+          </li>
+          <li class="burger_links-item">
+            <a class="burger_link">Facebook</a>
+          </li>
+          <li class="burger_links-item">
+            <a class="burger_link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="burger_close-button" burger-close>
+        <svg class="burger_close-svg">
+          <use href="./images/icons.svg#cross-icon"></use>
+        </svg>
+      </button>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
 

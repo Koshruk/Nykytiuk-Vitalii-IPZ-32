@@ -1,13 +1,20 @@
 .info-section{
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &_title{
         display: none;
     }
 
+    &_list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
     &_item{
-        max-width: 270px;
-        text-align: left;
+        flex-grow: 1;
+        text-align: center;
     }
 
     &_svg-container{
@@ -33,5 +40,31 @@
     &_text{
         line-height: 1.71;
         color: $pale-color;
+    }
+
+    @media screen and (min-width:768px) {
+        &_list{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &_item{
+            flex-basis: 40%;
+
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &_list{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        &_item{
+            max-width: 270px;
+        }
     }
 }

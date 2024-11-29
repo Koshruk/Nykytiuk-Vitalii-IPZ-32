@@ -10,7 +10,7 @@
 
     &_content{
         background-color: $white;
-        width: 528px;
+        width: 350px;
         display: flex;
         padding: 40px;
         position: absolute;
@@ -36,6 +36,18 @@
             display: block;
             height: 11px;
             width: 11px;
+        }
+    }
+
+    @media screen and (min-width: 480px){
+        &_content{
+            width: 425px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &_content{
+            width: 528px;
         }
     }
 }

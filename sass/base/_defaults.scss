@@ -50,7 +50,7 @@ body {
 
   h1 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
@@ -89,7 +89,7 @@ body {
       max-width: 24px;
     }
   }
-
+/*
   .list-section{
     padding-bottom: 94px;
 
@@ -106,7 +106,7 @@ body {
       margin-bottom: 50px;
     }
   }
-
+*/
   .links-list{
     max-height: 44px;
     display: flex;
@@ -177,17 +177,30 @@ body {
     }
   }
 
-.close{
-  animation: hide-overlay 200ms;
-  .close-content{
-    animation: hide 200ms;
+  .close{
+    animation: hide-overlay 200ms;
+    .close-content{
+      animation: hide 200ms;
+    }
   }
-}
 
 .figure{
+  width: 100%;
+  height: auto;
   border: 1px solid $figure-border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+
+  &_image-wrapper{
+    position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  &_image{
+    width: 100%;
+    height: auto;
+  }
 
   &_caption{
     padding: 20px 24px 20px;
@@ -215,19 +228,13 @@ body {
     }
   }
 
-  &_image-wrapper{
-    position: relative;
-      width:max-content;
-      overflow: hidden;
-  }
-
   &_overlay{
     background-image: linear-gradient(0deg, $active-overlay-color, $active-overlay-color);
   color: $white;
   position: absolute;
   height: 100%;
   width: 100%;
-  bottom: 0%;
+  bottom: -1px;
   right: 0px;
   left: 0px;
   padding: 63px 24px;
@@ -239,5 +246,13 @@ body {
   &_overlay-text{
     font-size: 18px;
     line-height: 1.56;
+  }
+
+
+}
+
+@media screen and (min-width:769px){
+  h1{
+    font-size: 44px;
   }
 }

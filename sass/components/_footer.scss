@@ -3,9 +3,19 @@
     padding: 60px 0px 60px;
     color: $white;
 
-    .container{
+    &_container{
         display: flex;
         align-items: baseline;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &_upper-div{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 60px;
     }
 
     &_title{
@@ -15,7 +25,7 @@
     }
 
     &_links-section{
-        margin-left: 100px
+         
     }
 
     &_address{
@@ -23,15 +33,14 @@
     }
 
     &_field-section{
-        margin-left: 94px;
         width: 100%;
         max-width: 570px;
     }
 
     &_form{
-        display: flex;
-        gap: 12px;
     }
+
+    
 
     &_input{
         background-color: inherit;
@@ -44,10 +53,46 @@
         padding-left: 16px;
         font-size: 16px;
         line-height: 1.25;
+
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     &_button{
         padding-left: 28px;
         padding-right: 28px;
+        margin-inline: auto;
+    }
+
+    @media screen and (min-width:768px) {
+        &_upper-div{
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &_upper-div{
+            flex-direction: row;
+            margin-bottom: 0;
+            gap: 70px;
+            align-items: baseline;
+        }
+        &_container{
+            flex-direction: row;
+            align-items :baseline;
+            text-align: left;
+        }
+        &_form{
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+        }
+        &_input{
+            margin-bottom: 0;
+        }
+        &_field-section{
+            margin-left: auto;
+        }
     }
 }

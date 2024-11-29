@@ -1,4 +1,17 @@
 .pictures-section{
+    display: none;
+    
+    &_title{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    &_list{
+        display: flex;
+        justify-content: space-between;
+    }
+
     &_item{
         position: relative;
     }
@@ -17,6 +30,14 @@
     &_overlay-text{
         font-weight: 700;
         text-transform: uppercase;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: block;
+        &_title{
+            font-size: 36px;
+        }
     }
 }
 

@@ -7,14 +7,17 @@
     a{
         font-weight: 500;
         letter-spacing: 0.02em;
-        padding: 25px 0;
     }
-    ul, li{
-        display: flex;
+
+
+    &_logo{
+        padding: 25px 0;
     }
 
     &_nav{
-        margin-left: 93px;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
     }
 
     &_nav-item:not(:last-child){
@@ -33,11 +36,48 @@
                 display: flex;
                 position: absolute;
                 left: 0;
-                bottom: -8px;
+                bottom: -33px;
             }
         }
     }
-        
+
+    &_contacts-list{
+        display: none;
+    }
+
+    &_burger-button{
+        margin-left: auto;
+        border:none;
+        background-color: inherit;
+    }
+
+    &_burger-svg{
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    @media screen and (min-width:650px) {
+        &_nav{
+            display: block;
+        }
+        &_nav-list{
+            display: flex;
+        }
+        &_contacts-list{
+            display: flex;
+        }
+
+        &_burger-button{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &_nav{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }  
   }
   
     
